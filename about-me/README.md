@@ -1,1 +1,1 @@
-
+I am an aspiring IT Support and Cybersecurity professional with hands-on experience managing a home lab environment using TrueNAS SCALE. I specialize in troubleshooting systems, deploying self-hosted services, and automating workflows. My goal is to build secure and efficient IT infrastructures while continuously developing my skills in system administration and cybersecurity.
