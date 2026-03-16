@@ -13,13 +13,13 @@ This environment allows me to experiment with real-world technologies used in en
 
 Server Machine
 
-CPU: AMD Embedded G-Series SoC GX-420GI (4 cores / 4 threads)
+- CPU: AMD Embedded G-Series SoC GX-420GI (4 cores / 4 threads)
 
-RAM: 12 GB
+- RAM: 12 GB
 
-Storage: 128 GB m.2 SSD and 500 GB HDD
+- Storage: 128 GB m.2 SSD and 500 GB HDD
 
-Network: Gigabit Ethernet
+- Network: Gigabit Ethernet
 
 This server acts as the primary infrastructure host for all services deployed in the homelab.
 
@@ -44,3 +44,24 @@ TrueNAS SCALE provides:
 - virtualization capabilities
 
 It serves as the central management platform for the entire environment.
+
+
+---
+### Network Architecture
+
+The homelab network is connected to the home router and operates within a private network.
+
+Typical structure:
+
+Internet
+   │
+Router
+   │
+TrueNAS Server
+   │
+Docker Containers
+
+
+Some services are accessible remotely through secure networking tools.
+
+Remote access is handled using Tailscale which allows secure access to internal services without exposing ports to the public internet.
