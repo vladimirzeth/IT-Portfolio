@@ -142,3 +142,19 @@ Benefits of this container-based infrastructure include:
 Docker containers are managed through Dockge, which provides a user-friendly interface for managing container stacks, monitoring running services, and maintaining configuration files for each deployed application.
 
 This setup allows the homelab environment to simulate modern infrastructure practices where containerized services are commonly used for hosting internal tools and applications.
+
+
+---
+**Security Measures**
+
+Security considerations implemented in this environment include:
+
+- private network isolation
+
+- secure remote access via VPN
+
+- limited external exposure of services
+
+- DNS filtering to block malicious domains
+
+These practices help simulate secure infrastructure management practices.
