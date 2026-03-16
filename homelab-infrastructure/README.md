@@ -53,14 +53,7 @@ The homelab network is connected to the home router and operates within a privat
 
 Typical structure:
 
-Internet
-   │
-Router
-   │
-TrueNAS Server
-   │
-Docker Containers
-
+Internet --> Router --> TrueNAS Server --> Docker Containers
 
 Some services are accessible remotely through secure networking tools.
 
