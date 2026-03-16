@@ -1,4 +1,4 @@
-## **Homelab Infrastructure**
+### **Homelab Infrastructure**
 Overview
 
 This homelab environment was created to simulate a small IT infrastructure where I can practice system administration, networking, and service deployment.
