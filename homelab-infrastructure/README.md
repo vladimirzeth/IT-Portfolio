@@ -1,5 +1,5 @@
 # Homelab Infrastructure
-Overview
+### Overview
 
 This homelab environment was created to simulate a small IT infrastructure where I can practice system administration, networking, and service deployment.
 
@@ -58,3 +58,87 @@ Typical structure:
 Some services are accessible remotely through secure networking tools.
 
 Remote access is handled using Tailscale which allows secure access to internal services without exposing ports to the public internet.
+
+
+---
+### Hosted Services
+
+The homelab currently hosts several services used for experimentation and learning.
+
+**Collaboration Platform**
+
+Team communication platform using **Mattermost** with project management via **Focalboard**.
+
+Purpose:
+
+- internal communication
+
+- project management
+
+- team collaboration simulation
+
+
+---
+**DNS Filtering Server**
+
+Network-wide DNS filtering using **Pi-hole**.
+
+Purpose:
+
+- block advertisements
+
+- prevent malicious domains
+
+- improve network privacy
+
+
+---
+**Workflow Automation Server**
+
+Automation workflows powered by **n8n**.
+
+Purpose:
+
+- automate repetitive tasks
+
+- trigger workflows between services
+
+- experiment with automation pipelines
+
+
+---
+**Secure Remote Access**
+
+Secure network access using **Tailscale**.
+
+Purpose:
+
+- connect to homelab remotely
+
+- secure device-to-device networking
+
+- encrypted private access to services
+
+
+---
+**Container Infrastructure**
+
+Applications in this environment are deployed using containerized services managed through **Docker** and orchestrated with **Dockge**. This setup allows services to be deployed, updated, and maintained in an organized and scalable way.
+
+Using containerized applications enables each service to run in an isolated environment while sharing the same host system resources. This approach simplifies deployment and allows multiple services to run reliably on a single server.
+
+Benefits of this container-based infrastructure include:
+
+- service isolation between applications
+
+- simplified deployment and configuration
+
+- easier updates and maintenance
+
+- improved resource efficiency
+
+- better organization of multi-service environments
+
+Docker containers are managed through Dockge, which provides a user-friendly interface for managing container stacks, monitoring running services, and maintaining configuration files for each deployed application.
+
+This setup allows the homelab environment to simulate modern infrastructure practices where containerized services are commonly used for hosting internal tools and applications.
