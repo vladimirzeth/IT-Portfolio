@@ -1,4 +1,4 @@
-### **Homelab Infrastructure**
+# Homelab Infrastructure
 Overview
 
 This homelab environment was created to simulate a small IT infrastructure where I can practice system administration, networking, and service deployment.
@@ -7,8 +7,9 @@ The lab is built around a central server running TrueNAS SCALE, which hosts seve
 
 This environment allows me to experiment with real-world technologies used in enterprise IT environments while improving my troubleshooting and infrastructure management skills.
 
+
 ---
-**Hardware**
+### Hardware
 
 Server Machine
 
@@ -22,8 +23,9 @@ Network: Gigabit Ethernet
 
 This server acts as the primary infrastructure host for all services deployed in the homelab.
 
+
 ---
-**Operating Platform**
+### Operating Platform
 
 The main infrastructure platform used in this homelab is:
 
