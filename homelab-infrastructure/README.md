@@ -158,3 +158,5 @@ Security considerations implemented in this environment include:
 - DNS filtering to block malicious domains
 
 These practices help simulate secure infrastructure management practices.
+
+(https://github.com/vladimirzeth/IT-Portfolio/blob/main/homelab-infrastructure/screenshots/Network%20Architecture.png)
