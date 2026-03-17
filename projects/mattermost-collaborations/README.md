@@ -13,7 +13,6 @@ Mattermost provides a team chat interface with channels, direct messages, and fi
 | Platform | TrueNAS Scale |
 | Deployment | Docker via Dockge |
 | Database | PostgreSQL (separate container) |
-| Port | 8065 |
 | Storage | Persistent volume on 500 GB HDD |
 
 ## How I deployed it
