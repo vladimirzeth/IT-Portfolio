@@ -4,7 +4,7 @@ A network-wide DNS sinkhole that blocks ads and trackers for every device on the
 
 ## What it does
 
-Pi-hole acts as the primary DNS server for the home network. When any device makes a DNS request, Pi-hole checks it against blocklists and either resolves it or drops it if it matches a known ad or tracker domain. This protects all devices — including phones, smart TVs, and IoT devices — at the network level.
+Pi-hole acts as the primary DNS server for the home network. When any device makes a DNS request, Pi-hole checks it against blocklists and either resolves it or drops it if it matches a known ad or tracker domain. This protects all devices including phones, smart TVs, and IoT devices at the network level.
 
 ## Setup overview
 
@@ -23,7 +23,7 @@ Pi-hole acts as the primary DNS server for the home network. When any device mak
 
 ## Challenges & how I solved them
 
-- **Challenge:** Port 53 conflict — the host OS was already using it for local DNS
+- **Challenge:** Port 53 conflict the host OS was already using it for local DNS
   **Fix:** Disabled the host's `systemd-resolved` stub listener and reassigned port 53 to the Pi-hole container
 
 - **Challenge:** All DNS stopped working when the Pi-hole container went down
