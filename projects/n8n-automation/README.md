@@ -27,11 +27,11 @@ Built a workflow that monitors a webhook trigger and sends a notification — de
 
 ## Challenges & how I solved them
 
-- **Challenge:** Workflows were lost after container restart
-  **Fix:** Properly mapped the `.n8n` data directory to a named Docker volume
+- **Challenge:** Devices on the network were not automatically using Pi-hole as their DNS server after deployment
+  **Fix:** Logged into the home router's DHCP settings and set the server's local IP as the primary DNS server, so all connected devices receive it automatically
 
-- **Challenge:** n8n was accessible from outside the local network without authentication
-  **Fix:** Enabled basic auth via environment variables and restricted access through Tailscale
+- **Challenge:** Some devices were bypassing Pi-hole by using hardcoded DNS servers (e.g. 8.8.8.8)
+  **Fix:** Added a firewall rule on the router to intercept and redirect all outbound DNS traffic on port 53 to Pi-hole, forcing every device to use it regardless of their configured DNS
 
 ## What I learned
 
