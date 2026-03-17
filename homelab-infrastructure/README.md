@@ -159,4 +159,4 @@ Security considerations implemented in this environment include:
 
 These practices help simulate secure infrastructure management practices.
 
-(https://github.com/vladimirzeth/IT-Portfolio/blob/main/homelab-infrastructure/screenshots/Network%20Architecture.png)
+![Network Architecture](https://github.com/vladimirzeth/IT-Portfolio/blob/main/homelab-infrastructure/screenshots/Network%20Architecture.png)
