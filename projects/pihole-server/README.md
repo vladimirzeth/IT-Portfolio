@@ -12,7 +12,6 @@ Pi-hole acts as the primary DNS server for the home network. When any device mak
 |---|---|
 | Platform | TrueNAS Scale |
 | Deployment | Docker via Dockge |
-| Port | 80 (web UI), 53 (DNS) |
 | Role | Primary DNS server for home network |
 
 ## How I deployed it
