@@ -4,7 +4,7 @@ This section contains documentation of the systems I have deployed and managed i
 
 ## Architecture
 
-![Homelab Architecture](./assets/architecture.png)
+![Homelab Architecture](https://github.com/vladimirzeth/IT-Portfolio/blob/main/homelab-infrastructure/screenshots/Network%20Architecture.png)
 
 > All services run as Docker containers on TrueNAS Scale, managed through Dockge. Pi-hole handles network-wide DNS filtering, and Tailscale provides secure remote access without any open ports.
 
