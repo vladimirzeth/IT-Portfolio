@@ -38,4 +38,4 @@ Pi-hole acts as the primary DNS server for the home network. When any device mak
 
 ## Screenshots
 
-![Pi-hole Dashboard](./screenshots/dashboard.png)
+![Pi-hole Dashboard](.[/screenshots/dashboard.png](https://github.com/vladimirzeth/IT-Portfolio/blob/main/projects/pihole-server/screenshots/pihole-interface.png?raw=true))
