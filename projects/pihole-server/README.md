@@ -39,3 +39,20 @@ Pi-hole acts as the primary DNS server for the home network. When any device mak
 ## Screenshots
 
 ![Pi-hole Dashboard](https://github.com/vladimirzeth/IT-Portfolio/blob/main/projects/pihole-server/screenshots/pihole-interface.png?raw=true)
+
+Pi-hole Dashboard Overview
+
+This dashboard displays real-time DNS activity from my homelab environment using Pi-hole as a network-wide DNS filtering solution.
+
+The metrics shown above represent active traffic from multiple client devices connected to the network. The system is currently handling DNS queries and filtering unwanted domains such as advertisements and potentially malicious sources.
+
+Key observations from the dashboard:
+
+Total Queries reflects overall DNS requests handled by the server
+Queries Blocked shows the number of requests prevented based on configured blocklists
+Percentage Blocked demonstrates the effectiveness of DNS filtering across the network
+Domains on Lists indicates the scale of protection applied through aggregated blocklists
+
+The graphs visualize DNS activity over time, including both total queries and client activity, which helps in monitoring network usage patterns and identifying unusual behavior.
+
+This setup confirms that Pi-hole is actively integrated into the network as the primary DNS resolver, providing both performance benefits and an additional layer of security through domain-level filtering.
