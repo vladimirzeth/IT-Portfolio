@@ -38,8 +38,7 @@ Pi-hole acts as the primary DNS server for the home network. When any device mak
 
 ## Screenshots
 
-![Pi-hole Dashboard](https://github.com/vladimirzeth/IT-Portfolio/blob/main/projects/pihole-server/screenshots/pihole-interface.png?raw=true)
-
+![Pi-hole Dashboard](https://github.com/vladimirzeth/IT-Portfolio/blob/main/projects/pihole-server/screenshots/pihole-dashboard.png?raw=true)
 Pi-hole Dashboard Overview
 
 This dashboard displays real-time DNS activity from my homelab environment using Pi-hole as a network-wide DNS filtering solution.
