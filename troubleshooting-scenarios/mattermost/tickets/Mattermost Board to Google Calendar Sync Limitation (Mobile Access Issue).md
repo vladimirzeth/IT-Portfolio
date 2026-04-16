@@ -27,6 +27,7 @@ Users are unable to create, update, delete, or sync calendar events from the Mat
 - Manual event syncing required prior to fix  
 
 **Figure: Mattermost Mobile Application (Board Feature Not Available)**
+
   <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-mobile.png?raw=true" width="500"/>
 
 ---
