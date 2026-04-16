@@ -90,10 +90,12 @@ Updating tasks is not supported in the mobile application.
 The web interface enables users to search and modify task details.
 
 **Mobile (Limitation):**
-<img src="YOUR_MOBILE_UPDATE_SCREENSHOT" width="300"/>
+
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-update.png?raw=true" width="250"/>
 
 **Web Interface (Solution):**
-<img src="YOUR_UPDATE_IMAGE" width="500"/>
+
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-Update.png?raw=true" width="750"/>
 
 ---
 
@@ -103,10 +105,12 @@ Task deletion is not available via the mobile application.
 This functionality is handled through the web interface.
 
 **Mobile (Limitation):**
-<img src="YOUR_MOBILE_DELETE_SCREENSHOT" width="300"/>
+
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-delete.png?raw=true" width="250"/>
 
 **Web Interface (Solution):**
-<img src="YOUR_DELETE_IMAGE" width="500"/>
+
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-delete.png?raw=true" width="750"/>
 
 ---
 
@@ -116,10 +120,12 @@ Viewing structured tasks from Boards is limited on mobile.
 The web interface allows filtering and viewing tasks within a selected date range.
 
 **Mobile (Limitation):**
-<img src="YOUR_MOBILE_VIEW_SCREENSHOT" width="300"/>
+
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-view.png?raw=true" width="250"/>
 
 **Web Interface (Solution):**
-<img src="YOUR_VIEW_IMAGE" width="500"/>
+
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-view.png?raw=true" width="750"/>
 
 ---
 
@@ -129,10 +135,11 @@ Synchronization with Google Calendar is not directly available from the mobile a
 The web interface enables users to select a time range and synchronize tasks.
 
 **Mobile (Limitation):**
-<img src="YOUR_MOBILE_SYNC_SCREENSHOT" width="300"/>
+
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-sync.png?raw=true" width="250"/>
 
 **Web Interface (Solution):**
-<img src="YOUR_SYNC_IMAGE" width="500"/>
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-sync.png?raw=true" width="750"/>
 
 ---
 
