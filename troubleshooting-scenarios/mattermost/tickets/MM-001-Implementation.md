@@ -40,6 +40,7 @@ To address security concerns, the system generates a time-limited access link (v
 <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-URL.png?raw=true" width="250"/>
 
 **Web/Desktop (Bot Response with URL):**
+
 <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-url.png?raw=true" width="750"/>
 
 ---
@@ -49,10 +50,12 @@ To address security concerns, the system generates a time-limited access link (v
 After accessing the secure link, users are redirected to a custom-built web interface where full task management is available.
 
 **Mobile (Access via Browser):**
-<img src="YOUR_MOBILE_WEB_ACCESS" width="300"/>
+
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-interface.png?raw=true" width="250"/>
 
 **Web Interface (Dashboard):**
-<img src="YOUR_WEB_UI_IMAGE_MAIN" width="500"/>
+
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-webUI.png?raw=true" width="750"/>
 
 ---
 
@@ -64,10 +67,12 @@ Task creation is not possible directly within the Mattermost mobile application 
 To address this limitation, users can create tasks through the web interface.
 
 **Mobile (Limitation):**
-<img src="YOUR_MOBILE_CREATE_SCREENSHOT" width="300"/>
+
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-create.png?raw=true" width="250"/>
 
 **Web Interface (Solution):**
-<img src="YOUR_CREATE_IMAGE" width="500"/>
+
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-create.png?raw=true" width="750"/>
 
 Users can:
 - Enter task title  
