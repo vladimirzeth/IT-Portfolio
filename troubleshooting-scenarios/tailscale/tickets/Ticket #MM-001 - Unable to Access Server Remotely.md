@@ -1,4 +1,4 @@
-# Ticket #MM-001 – Unable to Access Server Remotely
+# Ticket #NV-001 – Unable to Access Server Remotely
 
 - **Status**: Resolved
 - **Priority**: High
@@ -6,11 +6,11 @@
 
 ## Issue Description
 
-The Mattermost server was accessible within the local network but could not be accessed remotely.
+The Navidrome server was accessible within the local network but could not be accessed remotely.
 
 ## Environment
  - **Platform**: TrueNAS SCALE
- - **Service**: Mattermost (Docker container)
+ - **Service**: Navidrome (Docker container)
  - **Remote Access**: Tailscale
 
 ## Symptoms
@@ -34,7 +34,7 @@ Reconnected VPN client and ensured proper network routing.
 
 ## Verification
 
-Successfully accessed Mattermost remotely.
+Successfully accessed Navidrome remotely.
 
 ## Lessons Learned
 
