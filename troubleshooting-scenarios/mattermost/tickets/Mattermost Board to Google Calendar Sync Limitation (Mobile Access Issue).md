@@ -42,7 +42,7 @@ Users are unable to create, update, delete, or sync calendar events from the Mat
 ## Root Cause
 Mattermost mobile application does not support Board functionality, and there is no native integration between Mattermost Boards and Google Calendar.
 
-##Resolution
+## Resolution
 Implemented an n8n automation workflow with a custom HTML web interface that enables:
 
 - Create event
