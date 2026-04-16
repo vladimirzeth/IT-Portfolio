@@ -25,7 +25,7 @@ Users are unable to create, update, delete, or sync calendar events from the Mat
 - No direct Google Calendar integration from Board
 - Manual event syncing required prior to fix
 
-![mattermost-mobile](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-mobile.png?raw=true)
+  ![mattermost-mobile](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-mobile.png?raw=true)
 
 
 
@@ -41,8 +41,8 @@ Users are unable to create, update, delete, or sync calendar events from the Mat
 
 **THE PICTURES BELOW ARE THE SCREENSHOTS FOR MATTERMOST WEB VERSION**
 
-![mattermost-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web.png?raw=true)
-![mattermost-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-board.png?raw=true)
+  ![mattermost-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web.png?raw=true)
+  ![mattermost-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-board.png?raw=true)
 
 
 
