@@ -22,7 +22,7 @@ Mattermost Slash Command → Bot (Secure Link Generator) → HTML Web Interface 
 
 This architecture ensures a secure, time-limited access mechanism while enabling seamless task creation, updates, deletion, and synchronization with Google Calendar.
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-n8n-workflow.png?raw=true" width="750"/>
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-n8n-workflow.png?raw=true" width="1000"/>
 
 ---
 
