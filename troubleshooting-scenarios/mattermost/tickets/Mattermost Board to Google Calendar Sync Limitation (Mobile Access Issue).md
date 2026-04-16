@@ -60,15 +60,15 @@ Implemented an n8n automation workflow with a custom HTML web interface that ena
 ### HTML WEB VERSION
 **Slash Command Trigger**
 - Initiates the workflow using a custom Mattermost slash command, allowing users to request access to the task management interface.
-![mattermost-web-slash](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-command.png?raw=true)
+  ![mattermost-web-slash](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-command.png?raw=true)
 
 **Secure Link via Bot (Expires in 30 Minutes)**
 - The slash command triggers a bot that sends a time-limited access link (valid for 30 minutes) to ensure secure interaction with the system.
-![mattermost-web-URL](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-url.png?raw=true)
+  ![mattermost-web-URL](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-url.png?raw=true)
 
 **HTML Web UI Dashboard**
 - Upon accessing the link, users are redirected to a custom-built HTML interface where they can manage tasks through Create, Update, View, Delete, and Sync functionalities.
-![mattermost-web-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-webUI.png?raw=true)
+  ![mattermost-web-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-webUI.png?raw=true)
 
 **Create Task**
   Users can create tasks by:
