@@ -72,7 +72,7 @@ To address this limitation, users can create tasks through the web interface.
 
 **Web Interface (Solution):**
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-create.png?raw=true" width="500"/>
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-create.png?raw=true" width="350"/>
 
 Users can:
 - Enter task title  
