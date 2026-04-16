@@ -58,5 +58,5 @@ This bridges the gap between Mattermost Boards and Google Calendar, allowing ful
 - Workflow accessible via mobile browser
 - Mattermost Board data properly mapped to calendar events
 
-##Lessons Learned
+## Lessons Learned
 Mobile feature limitations in collaboration tools can significantly disrupt workflows, but API-driven automation (e.g., n8n + Google Calendar API) can effectively bridge missing native functionality. Web-based UI layers are a practical workaround when mobile clients lack feature parity.
