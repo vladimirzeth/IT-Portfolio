@@ -95,6 +95,7 @@ Implemented an n8n automation workflow with a custom HTML web interface that ena
 
 **Sync to Google Calendar**
 - Enables synchronization of tasks to Google Calendar based on a selected time range, ensuring alignment between Mattermost Boards and calendar events.
+  
   ![mattermost-web-sync](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-sync.png?raw=true)
 
 
