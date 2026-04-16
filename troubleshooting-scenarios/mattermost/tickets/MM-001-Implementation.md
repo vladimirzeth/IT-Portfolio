@@ -14,13 +14,15 @@ The Mattermost mobile application does not support Board functionality, preventi
 
 ## Solution Architecture (n8n Automation Layer)
 
-The system is powered by an n8n automation workflow that connects Mattermost with Google Calendar through a structured pipeline.
+The system is built using an n8n automation workflow that acts as the integration layer between Mattermost and Google Calendar. It enables secure, event-driven communication between the user interface and external services.
 
-**System Flow:**
+### System Flow:
 
-Mattermost Slash Command → Bot (Secure Link Generator) → HTML Web Interface → n8n Workflow → Google Calendar API
+Mattermost Slash Command → Bot (Secure Link Generator) → HTML Web Interface → n8n Workflow Execution → Google Calendar API
 
-<img src="YOUR_N8N_FULL_WORKFLOW_SCREENSHOT" width="750"/>
+This architecture ensures a secure, time-limited access mechanism while enabling seamless task creation, updates, deletion, and synchronization with Google Calendar.
+
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-n8n-workflow.png?raw=true" width="750"/>
 
 ---
 
