@@ -44,7 +44,7 @@ Always isolate whether the issue is network-related or application-related befor
 # SCREENSHOTS
 ## Navidrome Service Connection Issue
 
-![Navidrome Timeout](screenshots/navidrome.png)
+![Navidrome Timeout](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/tailscale/tickets/screenshoots/navidrome.png?raw=true)
 
 This screenshot shows a connection timeout error encountered while attempting to access the Navidrome media server hosted within the local network.
 
