@@ -12,7 +12,7 @@ Users are unable to create, update, delete, or sync calendar events from the Mat
 
 
 - **Platform**: Mattermost (Desktop + Mobile)
-- **Automation** Tool: n8n
+- ****Automation Tool**: n8n
 - **Integration**: Google Calendar API
 - **UI Layer**: Custom HTML Web Interface
 - **Data Source**: Mattermost Board
@@ -41,7 +41,7 @@ Users are unable to create, update, delete, or sync calendar events from the Mat
 6. Built HTML-based web UI for CRUD operations
 7. Connected Mattermost Board → n8n workflow → Google Calendar API
 
-**THE PICTURES BELOW ARE THE SCREENSHOTS FOR MATTERMOST WEB VERSION**
+**Figure: Mattermost Web Interface and Board Functionality**
 
   ![mattermost-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web.png?raw=true)
   ![mattermost-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-board.png?raw=true)
