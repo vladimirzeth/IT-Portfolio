@@ -39,7 +39,7 @@ Users are unable to create, update, delete, or sync calendar events from the Mat
 6. Built HTML-based web UI for CRUD operations
 7. Connected Mattermost Board → n8n workflow → Google Calendar API
 
-### THE PICTURES BELOW ARE THE SCREENSHOTS FOR MATTERMOST WEB VERSION
+**THE PICTURES BELOW ARE THE SCREENSHOTS FOR MATTERMOST WEB VERSION**
 ![mattermost-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web.png?raw=true)
 ![mattermost-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-board.png?raw=true)
 
