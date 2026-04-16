@@ -1,7 +1,7 @@
 # Ticket #MM-001 – Mattermost Board to Google Calendar Sync Limitation (Mobile Access Issue)
-**Status**: Resolved (via Automation Workaround)
-**Priority**: High
-**Category**: Integration / Automation
+- **Status**: Resolved (via Automation Workaround)
+- **Priority**: High
+- **Category**: Integration / Automation
 
 ## Issue Description
 Users are unable to create, update, delete, or sync calendar events from the Mattermost Board when using the mobile application. The mobile version of Mattermost does not support Board functionality, resulting in a workflow limitation for event management on-the-go.
