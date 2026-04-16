@@ -42,6 +42,13 @@ Always isolate whether the issue is network-related or application-related befor
 
 
 # SCREENSHOTS
+## Navidrome Service Connection Issue
 
-BEFORE
+![Navidrome Timeout](screenshots/navidrome.png)
+
+This screenshot shows a connection timeout error encountered while attempting to access the Navidrome media server hosted within the local network.
+
+The error indicates that the service was not responding on the specified IP address and port, suggesting a potential issue with container status, port configuration, or network accessibility.
+
+This scenario was used to troubleshoot service availability, verify container health, and diagnose network-related issues within the homelab environment.
 
