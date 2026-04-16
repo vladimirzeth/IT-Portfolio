@@ -66,6 +66,7 @@ This solution bypasses the limitation of the Mattermost mobile application by pr
 
 **HTML Web UI Dashboard**
 - Upon accessing the link, users are redirected to a custom-built HTML interface where they can manage tasks through Create, Update, View, Delete, and Sync functionalities.
+  
   <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-webUI.png?raw=true" width="500"/>
 
 **Create Task**
