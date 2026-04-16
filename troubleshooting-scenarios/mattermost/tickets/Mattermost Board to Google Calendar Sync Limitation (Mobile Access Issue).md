@@ -38,8 +38,8 @@ Users are unable to create, update, delete, or sync calendar events from the Mat
 
 **Figure: Mattermost Web Interface and Board Functionality**
 
-  ![mattermost-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web.png?raw=true)
-  ![mattermost-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-board.png?raw=true)
+  <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web.png?raw=true" width="500"/>
+  <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-board.png?raw=true" width="500"/>
 
 
 
@@ -47,8 +47,9 @@ Users are unable to create, update, delete, or sync calendar events from the Mat
 Mattermost mobile application does not support Board functionality, and there is no native integration between Mattermost Boards and Google Calendar.
 
 ## Resolution
-Implemented an n8n automation workflow with a custom HTML web interface that enables:
+Implemented an automation workflow using n8n combined with a custom HTML web interface to enable full task management (Create, Update, Delete, View, Sync) and integration with Google Calendar.
 
+This solution bypasses the limitation of the Mattermost mobile application by providing a browser-accessible interface with secure, time-limited access.
 - Create event
 - Update event
 - Delete event
@@ -57,15 +58,15 @@ Implemented an n8n automation workflow with a custom HTML web interface that ena
 ### HTML WEB VERSION
 **Slash Command Trigger**
 - Initiates the workflow using a custom Mattermost slash command, allowing users to request access to the task management interface.
-  ![mattermost-web-slash](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-command.png?raw=true)
+  <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-command.png?raw=true" width="500"/>
 
 **Secure Link via Bot (Expires in 30 Minutes)**
 - The slash command triggers a bot that sends a time-limited access link (valid for 30 minutes) to ensure secure interaction with the system.
-  ![mattermost-web-URL](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-url.png?raw=true)
+  <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-url.png?raw=true" width="500"/>
 
 **HTML Web UI Dashboard**
 - Upon accessing the link, users are redirected to a custom-built HTML interface where they can manage tasks through Create, Update, View, Delete, and Sync functionalities.
-  ![mattermost-web-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-webUI.png?raw=true)
+  <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-webUI.png?raw=true" width="500"/>
 
 **Create Task**
   Users can create tasks by:
@@ -76,24 +77,24 @@ Implemented an n8n automation workflow with a custom HTML web interface that ena
   - Assigning responsible individuals
   - Adding task descriptions
 
-  ![mattermost-web-create](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-create.png?raw=true)
+  <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-create.png?raw=true" width="500"/>
 
 **Update Task**
 - Users can search for an existing task by title and modify its details, enabling flexible task management and updates.
-  ![mattermost-web-update](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-Update.png?raw=true)
+  <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-Update.png?raw=true" width="500"/>
 
 **Delete Task**
 - Allows users to remove tasks by simply searching for the task title and confirming deletion.
-  ![mattermost-web-delete](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-delete.png?raw=true)
+  <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-delete.png?raw=true" width="500"/>
 
 **View Tasks**
 - Users can filter and view tasks within a selected date range by specifying a start and end date.
-  ![mattermost-web-view](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-view.png?raw=true)
+  <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-view.png?raw=true" width="500"/>
 
 **Sync to Google Calendar**
 - Enables synchronization of tasks to Google Calendar based on a selected time range, ensuring alignment between Mattermost Boards and calendar events.
   
-  ![mattermost-web-sync](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-sync.png?raw=true)
+  <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-sync.png?raw=true" width="500"/>
 
 
 
