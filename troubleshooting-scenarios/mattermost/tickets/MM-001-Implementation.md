@@ -7,7 +7,7 @@ This document provides a detailed walkthrough of the implemented solution used t
 ### 📱 Mobile Limitation (Mattermost App)
 The Mattermost mobile application does not support Board functionality, preventing users from managing tasks such as creation, updates, and synchronization.
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-mobile.png?raw=true" width="300"/>
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-mobile.png?raw=true" width="100"/>
 
 ---
 
@@ -23,7 +23,7 @@ Since direct interaction with Boards is not available on mobile, users initiate 
 
 **Mobile (Command Input):**
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-slash.png?raw=true" width="300"/>
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-slash.png?raw=true" width="100"/>
 
 **Web/Desktop (Command Execution):**
 
