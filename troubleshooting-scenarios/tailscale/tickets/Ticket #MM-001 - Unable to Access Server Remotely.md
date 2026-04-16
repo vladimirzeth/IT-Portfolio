@@ -1,17 +1,17 @@
 # Ticket #MM-001 – Unable to Access Server Remotely
 
-Status: Resolved
-Priority: High
-Category: Network / Application
+- Status: Resolved
+- Priority: High
+- Category: Network / Application
 
 ## Issue Description
 
 The Mattermost server was accessible within the local network but could not be accessed remotely.
 
 ## Environment
-Platform: TrueNAS SCALE
-Service: Mattermost (Docker container)
-Remote Access: Tailscale
+ Platform: TrueNAS SCALE
+ Service: Mattermost (Docker container)
+ Remote Access: Tailscale
 
 ## Symptoms
 Accessible locally via IP and port
