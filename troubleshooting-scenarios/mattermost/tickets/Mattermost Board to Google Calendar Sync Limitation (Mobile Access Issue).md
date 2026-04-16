@@ -7,8 +7,6 @@
 Users are unable to create, update, delete, or sync calendar events from the Mattermost Board when using the mobile application. The mobile version of Mattermost does not support Board functionality, resulting in a workflow limitation for event management on-the-go.
 
 ## Environment
-
-
 - **Platform**: Mattermost (Desktop + Mobile)
 - **Automation** Tool: n8n
 - **Integration**: Google Calendar API
@@ -18,14 +16,13 @@ Users are unable to create, update, delete, or sync calendar events from the Mat
 
 
 ## Symptoms
-
-
 - Mattermost mobile app does not display Board feature
 - Users cannot create or manage events via mobile
 - No direct Google Calendar integration from Board
 - Manual event syncing required prior to fix
 
-  ![mattermost-mobile](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-mobile.png?raw=true)
+
+  <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-mobile.png?raw=true" width="500"/>
 
 
 
@@ -39,7 +36,7 @@ Users are unable to create, update, delete, or sync calendar events from the Mat
 6. Built HTML-based web UI for CRUD operations
 7. Connected Mattermost Board → n8n workflow → Google Calendar API
 
-**THE PICTURES BELOW ARE THE SCREENSHOTS FOR MATTERMOST WEB VERSION**
+**Figure: Mattermost Web Interface and Board Functionality**
 
   ![mattermost-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web.png?raw=true)
   ![mattermost-webUI](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-board.png?raw=true)
