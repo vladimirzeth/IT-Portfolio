@@ -2,12 +2,25 @@
 This document provides a detailed walkthrough of the implemented solution used to overcome the Mattermost mobile limitation and enable full task and calendar management.
 
 ---
+
 ## Implementation Details (HTML Web Interface)
 
 ### 📱 Mobile Limitation (Mattermost App)
-The Mattermost mobile application does not support Board functionality, preventing users from managing tasks such as creation, updates, and synchronization.
+The Mattermost mobile application does not support Board functionality, preventing users from managing tasks such as creation, updates, deletion, and synchronization.
 
 <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-mobile.png?raw=true" width="250"/>
+
+---
+
+## Solution Architecture (n8n Automation Layer)
+
+The system is powered by an n8n automation workflow that connects Mattermost with Google Calendar through a structured pipeline.
+
+**System Flow:**
+
+Mattermost Slash Command → Bot (Secure Link Generator) → HTML Web Interface → n8n Workflow → Google Calendar API
+
+<img src="YOUR_N8N_FULL_WORKFLOW_SCREENSHOT" width="750"/>
 
 ---
 
@@ -33,7 +46,7 @@ Since direct interaction with Boards is not available on mobile, users initiate 
 
 ### 🔐 Secure Link via Bot (Expires in 30 Minutes)
 
-To address security concerns, the system generates a time-limited access link (valid for 30 minutes) via a bot response.
+To ensure secure access, the system generates a time-limited link (valid for 30 minutes) via a bot response.
 
 **Mobile (Receiving Secure Link):**
 
@@ -61,6 +74,8 @@ After accessing the secure link, users are redirected to a custom-built web inte
 
 ## Core Functionalities
 
+---
+
 ### ➕ Create Task
 
 Task creation is not possible directly within the Mattermost mobile application due to missing Board support.  
@@ -74,13 +89,13 @@ To address this limitation, users can create tasks through the web interface.
 
 <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-create.png?raw=true" width="350"/>
 
-Users can:
-- Enter task title  
-- Select status via dropdown  
-- Assign committees through checkboxes  
-- Set date  
-- Assign responsible individuals  
-- Add task descriptions  
+**Inputs Supported:**
+- Task title  
+- Status selection (dropdown)  
+- Committee assignment (checkboxes)  
+- Date selection  
+- Assigned users  
+- Task description  
 
 ---
 
@@ -117,7 +132,7 @@ This functionality is handled through the web interface.
 ### 👁️ View Tasks
 
 Viewing structured tasks from Boards is limited on mobile.  
-The web interface allows filtering and viewing tasks within a selected date range.
+The web interface allows filtering tasks within a selected date range.
 
 **Mobile (Limitation):**
 
@@ -146,5 +161,11 @@ The web interface enables users to select a time range and synchronize tasks.
 
 ## Summary
 
-This implementation demonstrates how a web-based interface combined with n8n automation can effectively overcome mobile application limitations.  
-By introducing a secure, time-limited access mechanism and centralized task management UI, users are able to perform full CRUD operations and synchronize data with Google Calendar regardless of device constraints.
+This implementation demonstrates how a web-based interface combined with an n8n automation workflow can effectively overcome mobile application limitations.
+
+By introducing:
+- A secure, time-limited access system  
+- A centralized HTML task management interface  
+- And an automation layer connecting Mattermost to Google Calendar  
+
+Users are able to perform full CRUD operations and synchronize tasks across platforms regardless of device constraints.
