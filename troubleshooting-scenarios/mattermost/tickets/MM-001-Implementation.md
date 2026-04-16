@@ -1,5 +1,3 @@
-<img width="1151" height="329" alt="image" src="https://github.com/user-attachments/assets/a8d194db-05d4-4aef-87a0-a77aab6ac4bb" /># MM-001 – System Implementation Details (Mattermost to Google Calendar Sync)
-
 ## Overview
 This document provides a detailed walkthrough of the implemented solution used to overcome the Mattermost mobile limitation and enable full task and calendar management.
 
