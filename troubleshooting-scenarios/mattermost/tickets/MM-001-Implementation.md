@@ -1,59 +1,73 @@
-# MM-001 – System Implementation Details (Mattermost to Google Calendar Sync)
+<img width="1151" height="329" alt="image" src="https://github.com/user-attachments/assets/a8d194db-05d4-4aef-87a0-a77aab6ac4bb" /># MM-001 – System Implementation Details (Mattermost to Google Calendar Sync)
 
 ## Overview
 This document provides a detailed walkthrough of the implemented solution used to overcome the Mattermost mobile limitation and enable full task and calendar management.
 
 ---
-
-## Mobile vs Web Context
+## Implementation Details (HTML Web Interface)
 
 ### 📱 Mobile Limitation (Mattermost App)
-The Mattermost mobile application does not support Board functionality, preventing users from managing tasks directly.
+The Mattermost mobile application does not support Board functionality, preventing users from managing tasks such as creation, updates, and synchronization.
 
 <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-mobile.png?raw=true" width="300"/>
 
 ---
 
-### 💻 Web Functionality (Mattermost Desktop)
-The Board feature is fully accessible on the web/desktop version of Mattermost.
+## Solution Walkthrough
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web.png?raw=true" width="500"/>
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-board.png?raw=true" width="500"/>
+The following sections demonstrate how the implemented web-based solution addresses the mobile limitation.
 
 ---
 
-## System Workflow
+### ⚡ Slash Command Trigger
 
-Mattermost Slash Command → Bot → Secure URL → HTML UI → n8n Workflow → Google Calendar API
+Since direct interaction with Boards is not available on mobile, users initiate the workflow using a custom Mattermost slash command.
 
----
+**Mobile (Command Input):**
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-slash.png?raw=true" width="300"/>
 
-## Step-by-Step Implementation
-
-### ⚡ 1. Slash Command Trigger
-Users initiate the workflow using a custom Mattermost slash command.
-
+**Web/Desktop (Command Execution):**
 <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-command.png?raw=true" width="500"/>
 
 ---
 
-### 🔐 2. Secure Link via Bot (Expires in 30 Minutes)
-A bot responds with a time-limited URL (valid for 30 minutes), ensuring secure access.
+### 🔐 Secure Link via Bot (Expires in 30 Minutes)
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-url.png?raw=true" width="500"/>
+To address security concerns, the system generates a time-limited access link (valid for 30 minutes) via a bot response.
+
+**Mobile (Receiving Secure Link):**
+<img src="YOUR_MOBILE_BOT_SCREENSHOT" width="300"/>
+
+**Web/Desktop (Bot Response with URL):**
+<img src="YOUR_BOT_LINK_IMAGE" width="500"/>
 
 ---
 
-### 🌐 3. HTML Web Interface
-Users are redirected to a custom-built interface that enables full task management.
+### 🌐 HTML Web Interface
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-webUI.png?raw=true" width="500"/>
+After accessing the secure link, users are redirected to a custom-built web interface where full task management is available.
+
+**Mobile (Access via Browser):**
+<img src="YOUR_MOBILE_WEB_ACCESS" width="300"/>
+
+**Web Interface (Dashboard):**
+<img src="YOUR_WEB_UI_IMAGE_MAIN" width="500"/>
 
 ---
 
 ## Core Functionalities
 
 ### ➕ Create Task
+
+Task creation is not possible directly within the Mattermost mobile application due to missing Board support.  
+To address this limitation, users can create tasks through the web interface.
+
+**Mobile (Limitation):**
+<img src="YOUR_MOBILE_CREATE_SCREENSHOT" width="300"/>
+
+**Web Interface (Solution):**
+<img src="YOUR_CREATE_IMAGE" width="500"/>
+
 Users can:
 - Enter task title  
 - Select status via dropdown  
@@ -62,37 +76,61 @@ Users can:
 - Assign responsible individuals  
 - Add task descriptions  
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-create.png?raw=true" width="500"/>
-
 ---
 
 ### ✏️ Update Task
-Users can search for an existing task by title and modify its details.
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-Update.png?raw=true" width="500"/>
+Updating tasks is not supported in the mobile application.  
+The web interface enables users to search and modify task details.
+
+**Mobile (Limitation):**
+<img src="YOUR_MOBILE_UPDATE_SCREENSHOT" width="300"/>
+
+**Web Interface (Solution):**
+<img src="YOUR_UPDATE_IMAGE" width="500"/>
 
 ---
 
 ### ❌ Delete Task
-Users can remove tasks by searching the task title and confirming deletion.
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-delete.png?raw=true" width="500"/>
+Task deletion is not available via the mobile application.  
+This functionality is handled through the web interface.
+
+**Mobile (Limitation):**
+<img src="YOUR_MOBILE_DELETE_SCREENSHOT" width="300"/>
+
+**Web Interface (Solution):**
+<img src="YOUR_DELETE_IMAGE" width="500"/>
 
 ---
 
 ### 👁️ View Tasks
-Users can filter and view tasks within a selected date range.
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-view.png?raw=true" width="500"/>
+Viewing structured tasks from Boards is limited on mobile.  
+The web interface allows filtering and viewing tasks within a selected date range.
+
+**Mobile (Limitation):**
+<img src="YOUR_MOBILE_VIEW_SCREENSHOT" width="300"/>
+
+**Web Interface (Solution):**
+<img src="YOUR_VIEW_IMAGE" width="500"/>
 
 ---
 
 ### 🔄 Sync to Google Calendar
-Tasks are synchronized to Google Calendar based on a selected time range.
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-web-sync.png?raw=true" width="500"/>
+Synchronization with Google Calendar is not directly available from the mobile application.  
+The web interface enables users to select a time range and synchronize tasks.
+
+**Mobile (Limitation):**
+<img src="YOUR_MOBILE_SYNC_SCREENSHOT" width="300"/>
+
+**Web Interface (Solution):**
+<img src="YOUR_SYNC_IMAGE" width="500"/>
 
 ---
 
 ## Summary
-This solution bridges the gap between Mattermost Boards and Google Calendar by introducing an automated workflow and a secure web interface, enabling full task management even on mobile devices where native support is unavailable.
+
+This implementation demonstrates how a web-based interface combined with n8n automation can effectively overcome mobile application limitations.  
+By introducing a secure, time-limited access mechanism and centralized task management UI, users are able to perform full CRUD operations and synchronize data with Google Calendar regardless of device constraints.
