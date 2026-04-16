@@ -39,3 +39,9 @@ Successfully accessed Navidrome remotely.
 ## Lessons Learned
 
 Always isolate whether the issue is network-related or application-related before troubleshooting deeper.
+
+
+# SCREENSHOTS
+
+BEFORE
+
