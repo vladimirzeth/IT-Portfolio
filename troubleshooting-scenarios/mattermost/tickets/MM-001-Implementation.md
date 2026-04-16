@@ -27,7 +27,7 @@ Since direct interaction with Boards is not available on mobile, users initiate 
 
 **Web/Desktop (Command Execution):**
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-command.png?raw=true" width="500"/>
+<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-command.png?raw=true" width="750"/>
 
 ---
 
