@@ -36,6 +36,7 @@ Since direct interaction with Boards is not available on mobile, users initiate 
 To address security concerns, the system generates a time-limited access link (valid for 30 minutes) via a bot response.
 
 **Mobile (Receiving Secure Link):**
+
 <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-URL.png?raw=true" width="250"/>
 
 **Web/Desktop (Bot Response with URL):**
