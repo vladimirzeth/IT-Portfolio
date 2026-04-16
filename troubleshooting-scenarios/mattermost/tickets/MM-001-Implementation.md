@@ -24,9 +24,11 @@ The following sections demonstrate how the implemented web-based solution addres
 Since direct interaction with Boards is not available on mobile, users initiate the workflow using a custom Mattermost slash command.
 
 **Mobile (Command Input):**
+
 <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-slash.png?raw=true" width="300"/>
 
 **Web/Desktop (Command Execution):**
+
 <img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mattermost-slash-command.png?raw=true" width="500"/>
 
 ---
