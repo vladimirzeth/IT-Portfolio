@@ -45,7 +45,7 @@ Logs indicated failure in the PostgreSQL upgrade container:
 
 ## Troubleshooting Steps
 1. Reviewed app lifecycle logs:
-  - `/var/log/app_lifecycle.log`
+`/var/log/app_lifecycle.log`
 2. Identified PostgreSQL upgrade failure during startup
 3. Checked container creation flow for Nextcloud stack
 4. Identified possible permission issue on Postgres data directory
