@@ -13,5 +13,9 @@ This repository showcases my hands-on experience in IT support, troubleshooting,
 - Configured remote access using VPN (Tailscale)
 - Managed and troubleshot self-hosted applications
 
+## My Learning Journey
+
+I built this homelab to simulate real-world IT environments where I can practice troubleshooting, system setup, and user support scenarios.
+
 ## Goal
 To transition into an IT Support / Help Desk role by applying practical, real-world troubleshooting skills.
