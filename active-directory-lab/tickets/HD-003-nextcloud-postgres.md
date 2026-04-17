@@ -1,7 +1,7 @@
 # Ticket ID: HD-003
 
 ## User Information
-- Name: TrueNAS SCALE Admin (truenas_admin)
+- Name: TrueNAS SCALE Admin
 - Role: System Administrator
 - Platform: TrueNAS SCALE
 
@@ -13,7 +13,7 @@
 ## Environment
 - OS: TrueNAS Scale
 - Platform: Nextcloud App
-- Storage Path: `/mn/<pool>/<dataset>/Nextcloud`
+- Storage Path: `/mnt/<pool>/<dataset>/Nextcloud`
 
 ---
 
@@ -30,7 +30,7 @@ Nextcloud application was stuck at 20% during upgrade process, failing to comple
 
 ## Priority
 - Level: High 
-- Impact: Servicie disruption during upgrade
+- Impact: Service disruption during upgrade process (Nextcloud temporarily inaccessible)
 - Urgency: Immediate access required for ongoing work  
 
 ---
@@ -66,13 +66,12 @@ After correcting permissions, Nextcloud app successfully completed startup and u
 ---
 
 ## Root Cause & User Explanation
-The PostgreSQL update container failed because it did not have proper read/write permission on the database storage directory.
-TrueNAS SACLE apps run PostgreSQQL under a specific internal user ID (UID 999). When the dataset ownership does not match this UID, the upgrade container exits with failure (**exit 1**), causing the entire Nextcloud app startup process to fail.
+The PostgreSQL upgrade container failed because the database dataset had incorrect ownership. TrueNAS SCALE runs PostgreSQL under UID 999, and mismatched permissions prevented read/write access, causing the container to exit with error code 1 and blocking the upgrade process.
 
 ---
 
 ## Time to Resolution
-- ~30 - 60 minutes (including diagnosis and valadation)
+- ~30 - 60 minutes (including diagnosis and validation)
 
 ## Status
 Resolved
@@ -80,11 +79,11 @@ Resolved
 ---
 
 ## Lessons Learned
-- TrueNAS SCALE app upgrades depend heavily on correct dataset ownership
+- TrueNAS SCALE application upgrades are sensitive to dataset ownership and permissions
 - PostgreSQL containers require UID 999 ownership for database directories
-- Failed upgrade containers can block entire app startup process
-- Always check `/var/log/app_lifecycle.log` for Helm/app lifecycle failures
-- Permission issues can appear as "database failure" but are actually lifesystem-related
+- Upgrade failures in dependent services can block entire application deployment
+- App lifecycle logs are critical for diagnosing Helm and container startup issues
+- Permission-related issues may present as database failures but originate from filesystem misconfiguration
 
 ---
 
