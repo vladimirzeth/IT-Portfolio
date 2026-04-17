@@ -10,24 +10,34 @@
 
 ---
 
+## Environment
+- OS: TrueNAS Scale
+- Platform: Docker
+- Service: Containerized Application
+
+---
+
 ## Issue Summary
 
 A container entered a restart loop and failed to start properly after deployment.
 
 ---
 ## Category
--	Software / Containerization
+Software / Containerization
 ---
 
 ## Priority
-- Priority: High
-- Impact: Main service unavailable
+- Level: High  
+- Impact: Main service unavailable  
+- Urgency: Immediate  
 
 ---
 
 ## Initial Diagnosis
 -	Container observed in continuous restart loop
 -	Service endpoint inaccessible via mapped port
+-	Suspected configuration issue due to recent deployment changes
+  
 ---
 
 ## Troubleshooting Steps
@@ -45,11 +55,11 @@ A container entered a restart loop and failed to start properly after deployment
 ---
 
 ## Resolution
-Updated the container port mapping to an available port and successfully restarted the container, restoring service availability.
+Updated the container port mapping to an available port and restarted the container, successfully restoring service availability.
 
 ---
 
-## User Communication
+## Root Cause & User Explanation
 The issue was caused by a port conflict due to duplicate port usage by another service. The configuration was corrected, and the service is now operational.
 
 ---
