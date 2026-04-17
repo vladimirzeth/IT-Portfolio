@@ -83,12 +83,12 @@ Using a VPN is a secure way to enable remote access to internal services. Proper
 ## Evidence / Screenshots
 
 ### Before Fix
-- Nextcloud server is unaccessible
+Nextcloud server is unaccessible
 ![Nextcloud Timeout](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/Before%20connecting%20to%20VPN.png?raw=true)
 
 ## VPN Used (Tailscale)
 ![Tailscale](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/Tailscale.png?raw=true)
 
 ### After Fix
-- Container running normally
+Container running normally
 ![Running Container](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/After%20connecting%20to%20VPN.png?raw=true)
