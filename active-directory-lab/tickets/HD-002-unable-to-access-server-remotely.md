@@ -23,7 +23,7 @@ The Nextcloud server was accessible within the local network but could not be ac
 ---
 
 ## Category
-Network
+Network / Remote Access
 
 ---
 
@@ -53,7 +53,7 @@ Network
 ## Tools / Commands Used
 - `docker ps`  
 - `ping`  
-- VPN client interface (Tailscale)  
+- Tailscale VPN client (connection status verification)
 
 ---
 
@@ -83,10 +83,10 @@ Using a VPN is a secure way to enable remote access to internal services. Proper
 ## Evidence / Screenshots
 
 ### Before Fix
-Nextcloud server is unaccessible
+Nextcloud server was inaccessible
 ![Nextcloud Timeout](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/Before%20connecting%20to%20VPN.png?raw=true)
 
-## VPN Used (Tailscale)
+### VPN Connection (Tailscale)
 ![Tailscale](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/Tailscale.png?raw=true)
 
 ### After Fix
