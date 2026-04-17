@@ -8,9 +8,10 @@
 ---
 
 ## Issue Summary
-A container entered a restart loop and failed to start properly after deployment
----
 
+A container entered a restart loop and failed to start properly after deployment
+
+---
 ## Category
 -	Software / Containerization
 ---
