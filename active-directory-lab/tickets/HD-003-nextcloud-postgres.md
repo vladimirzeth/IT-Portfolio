@@ -54,7 +54,7 @@ Logs indicated failure in the PostgreSQL upgrade container:
 ---
 
 ## Tools / Commands Used
-- `chown -R 999:999 /mnt/Tank/Application_NextCloud/Postgresdata`
+`chown -R 999:999 /mnt/Tank/Application_NextCloud/Postgresdata`
 
 ---
 
