@@ -31,14 +31,16 @@ A container entered a restart loop and failed to start properly after deployment
 ---
 
 ## Troubleshooting Steps
-1.	Checked container logs using 'docker logs'
+1.	Checked container logs using `docker logs`
 2.	Reviewed container configuration and port mappings
 3.	Identified that the configured port was already in use
 4.	Selected an available port for reassignment
 
+---
+
 ## Tools / Commands Used
-- 'docker logs <container_id>'
-- 'docker ps'
+- `docker logs <container_id>`
+- `docker ps`
 
 ---
 
@@ -52,7 +54,7 @@ The issue was caused by a port conflict due to duplicate port usage by another s
 
 ---
 
-## Timne to Resolution
+## Time to Resolution
 - ~15 minutes
 
 ## Status
