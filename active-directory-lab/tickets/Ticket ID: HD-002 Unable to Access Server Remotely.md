@@ -11,7 +11,7 @@
 ---
 
 ## Environment
-- OS: (e.g., Ubuntu Server / Windows 10 Client)
+- OS: TrueNAS Scale
 - Platform: Nextcloud (Docker)
 - Network: Local Network + VPN (Tailscale)
 
