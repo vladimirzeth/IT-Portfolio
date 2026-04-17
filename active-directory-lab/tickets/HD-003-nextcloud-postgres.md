@@ -13,7 +13,7 @@
 ## Environment
 - OS: TrueNAS Scale
 - Platform: Nextcloud App
-- Storage Path: /mn/<pool>/<dataset>/Nextcloud
+- Storage Path: `/mn/<pool>/<dataset>/Nextcloud`
 
 ---
 
