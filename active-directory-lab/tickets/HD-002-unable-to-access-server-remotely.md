@@ -84,11 +84,11 @@ Using a VPN is a secure way to enable remote access to internal services. Proper
 
 ### Before Fix
 Nextcloud server was inaccessible
-![Nextcloud Timeout](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/Before%20connecting%20to%20VPN.png?raw=true)
+![Nextcloud Timeout](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/hd-002-before-vpn.png?raw=true)
 
 ### VPN Connection (Tailscale)
-![Tailscale](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/Tailscale.png?raw=true)
+![Tailscale](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/hd-002-vpn-status.png?raw=true)
 
 ### After Fix
 Container running normally
-![Running Container](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/After%20connecting%20to%20VPN.png?raw=true)
+![Running Container](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/hd-002-after-fix.png?raw=true)
