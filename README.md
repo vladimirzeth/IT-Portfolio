@@ -52,7 +52,7 @@ This lab simulates a small-scale production environment where I practice:
 
 ## Knowledge Base
 Reusable troubleshooting guides based on resolved incidents  
- [View Knowledge Base](./knowledge-base)
+ [View Knowledge Base](./troubleshooting-scenarios)
 
 ---
 
