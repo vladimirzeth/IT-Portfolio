@@ -11,8 +11,6 @@ I focus on developing real-world troubleshooting skills, system administration k
 
 ---
 
-# IT Support / System Administration Portfolio
-
 ## Featured Ticket (Highlight)
 
 🔧 HD-003: Nextcloud PostgreSQL Upgrade Failure  
