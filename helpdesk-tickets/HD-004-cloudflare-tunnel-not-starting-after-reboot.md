@@ -40,7 +40,7 @@ After system reboot, the Cloudflared tunnel Docker container does not start auto
 ## Troubleshooting Steps
 1. Checked Docker container status using `docker ps -a`
 2. Confirmed Cloudflared tunnel container was not auto-starting after reboot
-3. Verified TrueNAS ini/Shutdown Scripts configuration
+3. Verified TrueNAS init/Shutdown Scripts configuration
 4. Checked script path: `/home/truenas_admin/start-cloudflaretunnel.sh`
 5. Confirmed script execution works manually when triggered
 6. Identified missing/failed automatic startup during boot process 
@@ -55,7 +55,7 @@ Additionally, the Init/Shutdown script was required to enforce container startup
 ---
 
 ## Resolution
-Configured and validated an Init/Shutdown script in TrueNAS SCALE to start Cloudflared tunnel at **Post Init stage**:
+Configured a TrueNAS SCALE Init/Shutdown Script (Post Init stage) to ensure the Cloudflared tunnel starts automatically after reboot:
 
 ```bash
 sudo bash /home/truenas_admin/start-cloudflaretunnel.sh
@@ -63,7 +63,7 @@ sudo bash /home/truenas_admin/start-cloudflaretunnel.sh
 ---
 
 ## Time to Resolution
-- ~30 - 45 minutes (including diagnosis and validation)
+- ~30-45 minutes (including diagnosis and validation)
 
 ## Status
 Resolved
@@ -81,6 +81,6 @@ Resolved
 
 ## Evidence / Screenshots
 
-**Init/Shutdown Script**
+**Init/Shutdown Script Configuration**
 
-![Upgrade Failure](https://github.com/vladimirzeth/IT-Portfolio/blob/main/helpdesk-tickets/screenshots/hd-04-Init-Shutdown-Script.png?raw=true)
+![Init/Shutdown Script](https://github.com/vladimirzeth/IT-Portfolio/blob/main/helpdesk-tickets/screenshots/hd-04-Init-Shutdown-Script.png?raw=true)
