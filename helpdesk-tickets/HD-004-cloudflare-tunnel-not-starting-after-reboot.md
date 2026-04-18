@@ -16,40 +16,41 @@
 ---
 
 ## Issue Summary
-After server reboot, the Cloudflared tunnel service does not start automatically, resulting in DNS resolution failure and HTTP 404 errors when attempting to access hosted services externally.
+After system reboot, the Cloudflared tunnel Docker container does not start automatically. This results in DNS resolution failure and HTTP 404 errors when attempting to access hosted services externally through the Cloudflare domain.
 
 ---
 
 ## Business Impact
-- External services become inaccessible after system reboot  
-- DNS routing fails due to inactive tunnel  
-- Users experience 404 errors when accessing services via domain  
-- Manual intervention required after every restart  
+- External services become inaccessible after system reboot
+- Cloudflare DNS routing fails due to inactive tunnel
+- Users experience HTTP 404 errors when accessing services via domain
+- Manual intervention required after every system restart to restore connectivity
 
 ---
 
 ## Initial Diagnosis
-- Verified that Cloudflared tunnel process was not running after reboot  
-- Confirmed that init/shutdown script did not execute properly  
-- DNS requests failed due to inactive tunnel connection  
-- Services behind Cloudflare could not be resolved externally  
+- Verified system after reboot and confirmed Cloudflared tunnel was not running
+- Checked Docker containers using: `sudo docker ps -a`
+- Identified that the Cloudflared container was not running after restart
+- Confirmed DNS requests failed due to inactive tunnel connection
+- Manual container execution restored external access temporarily
 
 ---
 
 ## Troubleshooting Steps
-1. Checked TrueNAS Init/Shutdown Scripts configuration  
-2. Verified script location and execution path:
-   `/home/truenas_admin/start-cloudflaretunnel.sh`  
-3. Confirmed script is set to run at **Post Init stage**  
-4. Checked service logs after reboot for execution errors  
-5. Verified tunnel manually starts successfully when executed manually  
+1. Checked Docker container status using `docker ps -a`
+2. Confirmed Cloudflared tunnel container was not auto-starting after reboot
+3. Verified TrueNAS ini/Shutdown Scripts configuration
+4. Checked script path: `/home/truenas_admin/start-cloudflaretunnel.sh`
+5. Confirmed script execution works manually when triggered
+6. Identified missing/failed automatic startup during boot process 
 
 ---
 
 ## Root Cause
-The Cloudflared tunnel was not automatically starting after reboot due to improper or unreliable execution of the init script during the TrueNAS SCALE boot sequence.
+The Cloudflared Docker container was not configured to automatically start after system reboot. Because of this, the tunnel service remained inactive until manually started.
 
-As a result, the DNS endpoint configured through Cloudflare was unreachable, causing external access failures and HTTP 404 responses.
+Additionally, the Init/Shutdown script was required to enforce container startup during the TrueNAS SCALE boot sequence.
 
 ---
 
@@ -58,3 +59,4 @@ Configured and validated an Init/Shutdown script in TrueNAS SCALE to start Cloud
 
 ```bash
 sudo bash /home/truenas_admin/start-cloudflaretunnel.sh
+
