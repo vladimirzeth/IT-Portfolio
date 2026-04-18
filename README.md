@@ -56,7 +56,8 @@ This lab simulates a small-scale production environment where I practice:
 - Managing self-hosted applications such as:
   - [Nextcloud](https://nextcloud.com/)  
   - [Navidrome](https://www.navidrome.org/)  
-  - [Mattermost](https://mattermost.com/)  
+  - [Mattermost](https://mattermost.com/)
+  - [n8n](https://n8n.io/)
 - Performing system upgrades and maintenance  
 - Documenting incidents and solutions  
 
