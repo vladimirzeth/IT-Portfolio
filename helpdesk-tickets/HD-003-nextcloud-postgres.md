@@ -20,6 +20,11 @@
 ## Issue Summary
 Nextcloud application was stuck at 20% during upgrade process, failing to complete deployment due to PostgreSQL upgrade container error.
 
+## Business Impact
+- Service downtime during upgrade  
+- Users unable to access files  
+- Potential disruption to ongoing work  
+
 ---
 
 ## Category
