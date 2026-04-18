@@ -32,7 +32,7 @@ Mattermost mobile application does not support Boards functionality, preventing 
 ## Priority
 - Level: High
 - Impact: Core task and calendar management unavailable on mobile
-- Urgency: High — affects daily team workflow
+- Urgency: High - affects daily team workflow
 ---
 ## Initial Diagnosis
 - Confirmed Mattermost mobile app does not render Boards interface
