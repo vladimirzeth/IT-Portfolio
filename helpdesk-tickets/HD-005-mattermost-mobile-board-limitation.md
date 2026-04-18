@@ -79,7 +79,7 @@ Implemented an n8n-based automation workflow with a custom HTML web interface to
 ## Root Cause & User Explanation
 The Mattermost mobile application does not support Boards at the client level, and no native Google Calendar integration exists. Rather than waiting for an upstream fix, a custom automation layer was built to bridge the gap - enabling full task management through a secure web interface accessible from any device including mobile.
 
-For full implementation walkthrough and screenshots, see: [Implementation Details](./MM-001-Implementation.md)
+For full implementation walkthrough and screenshots, see: [Implementation Details](https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/MM-001-Implementation.md)
 
 ---
 ## Time to Resolution
