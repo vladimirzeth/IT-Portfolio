@@ -5,9 +5,14 @@ This repository showcases my hands-on experience in IT support, troubleshooting,
 ---
 
 ## About Me
-I am a career shifter transitioning into IT Support with practical experience gained from building and managing a homelab environment.
+I am a career shifter transitioning into IT Support with practical experience gained
+from building and managing a homelab environment.
 
-I focus on developing real-world troubleshooting skills, system administration knowledge, and structured documentation practices aligned with industry standards.
+I focus on developing real-world troubleshooting skills, system administration knowledge,
+and structured documentation practices aligned with industry standards.
+
+I hold certifications in IT Support and Help Desk — details and verification links
+are provided directly in my resume for employer reference.
 
 ---
 
