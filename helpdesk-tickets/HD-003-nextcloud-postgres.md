@@ -91,18 +91,18 @@ Resolved
 
 ### Before Fix
 Got error in updating the Nextcloud
-![Upgrade Failure](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/hd-003-error.png?raw=true)
+![Upgrade Failure](https://github.com/vladimirzeth/IT-Portfolio/blob/main/helpdesk-tickets/screenshots/hd-003-error.png?raw=true)
 
 Logs
-![Logs](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/hd-003-logs.png?raw=true)
+![Logs](https://github.com/vladimirzeth/IT-Portfolio/blob/main/helpdesk-tickets/screenshots/hd-003-logs.png?raw=true)
 
 
 ---
 
 ### After Fix
 Logs After
-![Logs After](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/hd-003-logs-after.png?raw=true)
+![Logs After](https://github.com/vladimirzeth/IT-Portfolio/blob/main/helpdesk-tickets/screenshots/hd-003-logs-after.png?raw=true)
 
 Container running normally
 
-![Running Container](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/hd-003-after.png?raw=true)
+![Running Container](https://github.com/vladimirzeth/IT-Portfolio/blob/main/helpdesk-tickets/screenshots/hd-003-after.png?raw=true)
