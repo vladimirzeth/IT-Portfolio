@@ -77,3 +77,9 @@ Resolved
 - Post-reboot validation is necessary to ensure external services (DNS/tunnels) are fully operational
 - Automating critical infrastructure services reduces downtime and eliminates dependency on manual recovery steps
 
+---
+
+## Evidence / Screenshots
+
+**Init/Shutdown Script**
+![Upgrade Failure](https://github.com/vladimirzeth/IT-Portfolio/blob/main/helpdesk-tickets/screenshots/hd-04-Init-Shutdown-Script.png?raw=true)
