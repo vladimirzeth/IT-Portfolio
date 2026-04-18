@@ -1,4 +1,4 @@
-# Homelab Infrastructure (Flagship Project)
+# Homelab Infrastructure
 
 ## Overview
 This project showcases a complete homelab environment simulating a small-scale production IT infrastructure.
