@@ -1,7 +1,23 @@
-I am an aspiring IT professional focused on system administration, IT support, and infrastructure management. I am currently developing my technical skills through hands-on projects in my personal homelab environment.
+## About Me
 
-My homelab is built using TrueNAS SCALE, where I deploy and manage several self-hosted services such as collaboration platforms, automation tools, DNS filtering systems, and secure remote networking. These projects allow me to practice real-world IT tasks including system deployment, service configuration, network management, and troubleshooting.
+I spent over three years as a college instructor, including teaching IT-related subjects
+such as Professional Ethics for IT Professionals and Living in the IT Era. Throughout
+that time, my passion for technology was always running in the background. I built my
+own desktop PC from scratch, configured home routers, and handled everyday computer
+tasks out of genuine curiosity and enjoyment.
 
-I enjoy building and documenting technical systems as a way to strengthen my understanding of how modern infrastructure works. Through this portfolio, I document the projects I create, the technologies I experiment with, and the troubleshooting experiences I encounter while managing my lab environment.
+Eventually, that curiosity grew into something I could no longer ignore. I decided to
+pursue IT seriously, starting with certifications in IT support and help desk operations.
+Around the same time, I discovered the world of homelabbing, the idea of self-hosting
+your own services instead of relying entirely on commercial platforms. It immediately
+captivated me.
 
-I currently hold certifications in IT support and help desk operations and plan to further expand my knowledge in system administration, enterprise infrastructure, and cybersecurity.
+What started as curiosity turned into a fully running homelab built on TrueNAS SCALE,
+where I now deploy and manage multiple self-hosted services including collaboration
+platforms, automation tools, DNS filtering, and secure remote networking. Every service
+I run, every issue I troubleshoot, and every ticket I document is a deliberate step
+toward building the skills and experience needed to transition into a professional IT
+role.
+
+I am currently expanding my knowledge in system administration, enterprise
+infrastructure, and cybersecurity. This portfolio is the living record of that journey.
