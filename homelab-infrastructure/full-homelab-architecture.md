@@ -1,12 +1,20 @@
-# Homelab Infrastructure
-### Overview
+# Homelab Infrastructure (Flagship Project)
 
-This homelab environment was created to simulate a small IT infrastructure where I can practice system administration, networking, and service deployment.
+## Overview
+This project showcases a complete homelab environment simulating a small-scale production IT infrastructure.
 
-The lab is built around a central server running TrueNAS SCALE, which hosts several containerized services used for collaboration, automation, networking, and remote access.
+It is designed to replicate real-world scenarios involving system administration, service deployment, network configuration, and troubleshooting.
 
-This environment allows me to experiment with real-world technologies used in enterprise IT environments while improving my troubleshooting and infrastructure management skills.
+The environment is built around a central server running TrueNAS SCALE, hosting multiple containerized services used for collaboration, automation, and secure remote access.
 
+---
+## Skills Demonstrated
+- System administration (TrueNAS SCALE)
+- Docker container management
+- Network configuration and remote access (Tailscale)
+- Service deployment and maintenance
+- Infrastructure troubleshooting
+- Security best practices
 
 ---
 ### Hardware
@@ -17,7 +25,7 @@ Server Machine
 
 - RAM: 12 GB
 
-- Storage: 128 GB m.2 SSD and 500 GB HDD
+- Storage: 128 GB M.2 SSD and 500 GB HDD
 
 - Network: Gigabit Ethernet
 
@@ -33,7 +41,7 @@ The main infrastructure platform used in this homelab is:
 
 TrueNAS SCALE provides:
 
-- container management
+- Container management
 
 - storage management
 
@@ -47,7 +55,7 @@ It serves as the central management platform for the entire environment.
 
 
 ---
-### Network Architecture
+## Architecture Overview
 
 The homelab network is connected to the home router and operates within a private network.
 
@@ -160,3 +168,14 @@ Security considerations implemented in this environment include:
 These practices help simulate secure infrastructure management practices.
 
 ![Network Architecture](https://github.com/vladimirzeth/IT-Portfolio/blob/main/homelab-infrastructure/screenshots/Network%20Architecture.png)
+
+---
+## Real-World Relevance
+
+This homelab simulates a small business IT environment where:
+- Multiple services are hosted on a single infrastructure
+- Remote access is securely managed via VPN
+- Internal tools support collaboration and automation
+- System failures require troubleshooting and recovery
+
+This setup helps develop practical skills directly applicable to IT Support and System Administration roles.
