@@ -17,7 +17,7 @@ are provided directly in my resume for employer reference.
 ---
 
 ## Featured Ticket (Highlight)
-HD-005: Mattermost Mobile Board Limitation — n8n Automation Workaround
+HD-005: Mattermost Mobile Board Limitation, n8n Automation Workaround
 - Identified mobile client limitation blocking team task management
 - Designed and implemented an event-driven automation pipeline using n8n
 - Built a custom HTML web interface for full CRUD task operations
