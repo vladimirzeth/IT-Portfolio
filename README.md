@@ -18,7 +18,7 @@ HD-005: Mattermost Mobile Board Limitation — n8n Automation Workaround
 - Built a custom HTML web interface for full CRUD task operations
 - Integrated Mattermost → n8n → Google Calendar API via secure time-limited links
 
-[View Full Ticket](./helpdesk-tickets/HD-005-mattermost-mobile-board-limitation.md)
+    [View Full Ticket](./helpdesk-tickets/HD-005-mattermost-mobile-board-limitation.md)
 
 ---
 
