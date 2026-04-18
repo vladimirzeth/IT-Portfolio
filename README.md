@@ -23,12 +23,13 @@ HD-005: Mattermost Mobile Board Limitation — n8n Automation Workaround
 ---
 
 ## Key Skills Demonstrated
-- Incident troubleshooting and resolution  
-- System and application diagnostics  
-- Network configuration and VPN setup ([Tailscale](https://tailscale.com/))  
-- Linux-based system administration ([TrueNAS SCALE](https://www.truenas.com/truenas-scale/))  
-- Docker and self-hosted application management  
-- Technical documentation and ticketing  
+- Incident troubleshooting and resolution
+- System and application diagnostics
+- API-driven automation and workflow integration (n8n, Google Calendar API)
+- Network configuration and VPN setup (Tailscale)
+- Linux-based system administration (TrueNAS SCALE)
+- Docker and self-hosted application management
+- Technical documentation and ticketing
 
 ---
 
