@@ -59,4 +59,21 @@ Configured and validated an Init/Shutdown script in TrueNAS SCALE to start Cloud
 
 ```bash
 sudo bash /home/truenas_admin/start-cloudflaretunnel.sh
+```
+---
+
+## Time to Resolution
+- ~30 - 45 minutes (including diagnosis and validation)
+
+## Status
+Resolved
+
+---
+
+## Lessons Learned
+- Docker containers in TrueNAS SCALE do not always persist auto-start behavior after reboot unless explicitly configured
+- Verifying container status using docker ps -a is critical for identifying post-reboot service failures
+- Init/Shutdown Scripts are effective for enforcing service startup during boot sequence when native Docker restart policies are unreliable
+- Post-reboot validation is necessary to ensure external services (DNS/tunnels) are fully operational
+- Automating critical infrastructure services reduces downtime and eliminates dependency on manual recovery steps
 
