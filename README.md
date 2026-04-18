@@ -11,7 +11,7 @@ from building and managing a homelab environment.
 I focus on developing real-world troubleshooting skills, system administration knowledge,
 and structured documentation practices aligned with industry standards.
 
-I hold certifications in IT Support and Help Desk — details and verification links
+I hold certifications in IT Support and Help Desk details and verification links
 are provided directly in my resume for employer reference.
 
 ---
