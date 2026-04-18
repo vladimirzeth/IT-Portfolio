@@ -58,6 +58,8 @@ This lab simulates a small-scale production environment where I practice:
   - [Navidrome](https://www.navidrome.org/)  
   - [Mattermost](https://mattermost.com/)
   - [n8n](https://n8n.io/)
+  - [pihole](https://pi-hole.net/)
+  - [tailscale](https://tailscale.com/)
 - Performing system upgrades and maintenance  
 - Documenting incidents and solutions  
 
