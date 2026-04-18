@@ -18,7 +18,7 @@ I focus on developing real-world troubleshooting skills, system administration k
 - Identified permission issue (UID mismatch)  
 - Resolved using Linux ownership fix  
 
- [View Full Ticket](./helpdesk-tickets/HD-003-nextcloud-postgres.md)
+   [View Full Ticket](./helpdesk-tickets/HD-003-nextcloud-postgres.md)
 
 ---
 
