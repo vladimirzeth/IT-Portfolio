@@ -11,6 +11,19 @@ I focus on developing real-world troubleshooting skills, system administration k
 
 ---
 
+# IT Support / System Administration Portfolio
+
+## Featured Ticket (Highlight)
+
+🔧 HD-003: Nextcloud PostgreSQL Upgrade Failure  
+- Diagnosed container failure during upgrade  
+- Identified permission issue (UID mismatch)  
+- Resolved using Linux ownership fix  
+
+👉 [View Full Ticket](./helpdesk-tickets/HD-003-nextcloud-postgres.md)
+
+---
+
 ## Key Skills Demonstrated
 - Incident troubleshooting and resolution  
 - System and application diagnostics  
