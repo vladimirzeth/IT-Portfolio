@@ -13,9 +13,11 @@
 - Integration: Google Calendar API
 - UI Layer: Custom HTML Web Interface
 - Network: Local Network + Cloudflare Tunnel
+
 ---
 ## Issue Summary
 Mattermost mobile application does not support Boards functionality, preventing users from creating, updating, deleting, or syncing tasks and calendar events on mobile devices.
+
 ---
 ## Business Impact
 - Users unable to manage tasks or events from mobile
