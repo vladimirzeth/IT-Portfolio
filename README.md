@@ -12,13 +12,13 @@ I focus on developing real-world troubleshooting skills, system administration k
 ---
 
 ## Featured Ticket (Highlight)
+HD-005: Mattermost Mobile Board Limitation — n8n Automation Workaround
+- Identified mobile client limitation blocking team task management
+- Designed and implemented an event-driven automation pipeline using n8n
+- Built a custom HTML web interface for full CRUD task operations
+- Integrated Mattermost → n8n → Google Calendar API via secure time-limited links
 
- HD-003: Nextcloud PostgreSQL Upgrade Failure  
-- Diagnosed container failure during upgrade  
-- Identified permission issue (UID mismatch)  
-- Resolved using Linux ownership fix  
-
-   [View Full Ticket](./helpdesk-tickets/HD-003-nextcloud-postgres.md)
+[View Full Ticket](./helpdesk-tickets/HD-005-mattermost-mobile-board-limitation.md)
 
 ---
 
