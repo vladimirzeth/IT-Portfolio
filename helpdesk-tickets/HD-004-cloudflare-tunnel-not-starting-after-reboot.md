@@ -82,4 +82,5 @@ Resolved
 ## Evidence / Screenshots
 
 **Init/Shutdown Script**
+
 ![Upgrade Failure](https://github.com/vladimirzeth/IT-Portfolio/blob/main/helpdesk-tickets/screenshots/hd-04-Init-Shutdown-Script.png?raw=true)
