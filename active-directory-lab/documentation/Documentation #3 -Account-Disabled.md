@@ -41,7 +41,7 @@ This issue occurs when a user account in Active Directory has been disabled, pre
    
 8.	Confirm the account is now active
 
-   ~[Success Login](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-Successful-login.png?raw=true)
+   ![Success Login](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-Successful-login.png?raw=true)
 
 ## Verification
 -	User successfully logs in to domain workstation 
