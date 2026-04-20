@@ -47,8 +47,6 @@ Account lockout occurs when a user exceeds the maximum number of failed login at
 
   ![Verification for locked out](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-001-AD-Verification-Locked-Out.png?raw=true)
   
-  ![Locked Out](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-001-AD-Unlocking-Account.png?raw=true)
-
 ---
 
 ### 2. Unlock the Account
@@ -56,7 +54,7 @@ Account lockout occurs when a user exceeds the maximum number of failed login at
 - Select **Unlock Account**  
 - Click OK to confirm changes
 
-  ![Unlock Account](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-001-AD-Ater-Unlock.png?raw=true)
+    ![Locked Out](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-001-AD-Unlocking-Account.png?raw=true)
 
 ---
 
