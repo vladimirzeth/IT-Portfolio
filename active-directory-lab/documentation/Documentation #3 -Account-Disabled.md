@@ -23,10 +23,11 @@ This issue occurs when a user account in Active Directory has been disabled, pre
 
 ## Resolution
 1.	Open Active Directory Users and Computers
-2.	Navigate to the affected user account by using “Find” function in GUI
-3.	Right-click the account
-4.	Select “Enable Account”
-5.	Confirm the account is now active
+   	[Users and Computers]("https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Users-and-Computers.png?raw=true")
+3.	Navigate to the affected user account by using “Find” function in GUI
+4.	Right-click the account
+5.	Select “Enable Account”
+6.	Confirm the account is now active
 
 ## Verification
 -	User successfully logs in to domain workstation 
