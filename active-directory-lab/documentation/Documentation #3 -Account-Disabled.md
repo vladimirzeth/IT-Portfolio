@@ -23,7 +23,8 @@ This issue occurs when a user account in Active Directory has been disabled, pre
 
 ## Resolution
 1.	Open Active Directory Users and Computers
-   	![Users and Computers]("https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Users-and-Computers.png?raw=true")
+2.	
+   	![Users and Computers](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Users-and-Computers.png?raw=true)
 3.	Navigate to the affected user account by using “Find” function in GUI
 4.	Right-click the account
 5.	Select “Enable Account”
