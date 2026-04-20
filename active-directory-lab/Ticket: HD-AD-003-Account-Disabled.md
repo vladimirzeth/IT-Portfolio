@@ -1,7 +1,7 @@
 # Ticket ID: HD-AD-003
 
 ## User Information
-- Name: Anastasia Struva
+- Name: Anastasia Solyanik
 - Department: IT
 - Date Reported: April 20, 2026
 
@@ -20,3 +20,8 @@ Account was manually disabled by administrator.
 
 ## Status
 Resolved
+
+
+## Documentation
+
+[Active Directory – Account Disabled Troubleshooting](./active-directory-lab/documentation/Documentation #3 -Account-Disabled.md)
