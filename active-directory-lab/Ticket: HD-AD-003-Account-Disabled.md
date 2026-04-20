@@ -22,7 +22,7 @@ Account was manually disabled by administrator.
 Resolved
 
 
-## Documentation
+---
 
 ## Documentation
 
