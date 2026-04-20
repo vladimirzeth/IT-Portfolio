@@ -9,7 +9,9 @@ Account lockout occurs when a user exceeds the maximum number of failed login at
 - User cannot log in to domain account  
 - Error message: “The referenced account is currently locked out”  
 - Login attempts fail even with correct password  
-- Account status shows “Locked Out” in ADUC  
+- Account status shows “Locked Out” in ADUC
+
+  ![ACcount Locked](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-001-Account-Locked-Out.png?raw=true)
 
 ---
 
@@ -34,21 +36,34 @@ Account lockout occurs when a user exceeds the maximum number of failed login at
 
 ### 1. Identify the Locked Account
 - Open **Active Directory Users and Computers**
+
+  ![Users and Computers](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Users-and-Computers.png?raw=true)
+  
 - Search for user: Pierre Price
+
+  ![Search Pierre](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-001-Search-Result.png?raw=true)
+  
 - Confirm account status shows **Locked Out**
+
+  ![Verification for locked out](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-001-AD-Verification-Locked-Out.png?raw=true)
+  ![Locked Out](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-001-AD-Unlocking-Account.png?raw=true)
 
 ---
 
 ### 2. Unlock the Account
 - Right-click user account  
 - Select **Unlock Account**  
-- Click OK to confirm changes  
+- Click OK to confirm changes
+
+  ![Unlock Account](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-001-AD-Ater-Unlock.png?raw=true)
 
 ---
 
 ### 3. Verify Authentication
 - Ask user to log in again using correct credentials  
-- Confirm successful login  
+- Confirm successful login
+
+  ![Success login](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-001-Account-Unlocked.png?raw=true)
 
 ---
 
