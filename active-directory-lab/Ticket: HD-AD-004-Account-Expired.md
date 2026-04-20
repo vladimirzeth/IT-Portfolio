@@ -1,7 +1,7 @@
 # Ticket ID: HD-AD-004
 
 ## User Information
-- Name: Temporary Staff
+- Name: Melanie Cruz (Temporary Staff)
 - Department: Operations
 
 ## Issue Summary
