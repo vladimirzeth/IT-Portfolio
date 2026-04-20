@@ -36,11 +36,11 @@ This issue occurs when a user account in Active Directory has been disabled, pre
 
 	- Enter the user name
      
-   ![Search Function](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Finding-Name.png?raw=true)
+   	![Search Function](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Finding-Name.png?raw=true)
 
 	- Select the correct user from results
 	
-   ![Search Result](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Find.png?raw=true)
+   	![Search Result](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Find.png?raw=true)
    
 3. Right-click the user account to open the context menu
 4. Select **“Enable Account”** to re-activate the account
