@@ -3,6 +3,8 @@
 ## Overview
 This issue occurs when a user account in Active Directory has been disabled, preventing the user from authenticating to the domain. Disabled accounts are typically used for security control, employee offboarding, or administrative actions.
 
+![Account locked](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-login-account-disabled.png?raw=true)
+
 ## Symptoms
 -	User cannot log in to workstation or domain 
 -	Error message: “Your account has been disabled. Please see your system administrator.” 
@@ -23,12 +25,23 @@ This issue occurs when a user account in Active Directory has been disabled, pre
 
 ## Resolution
 1.	Open Active Directory Users and Computers
-2.	
+   
    	![Users and Computers](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Users-and-Computers.png?raw=true)
 3.	Navigate to the affected user account by using “Find” function in GUI
-4.	Right-click the account
-5.	Select “Enable Account”
-6.	Confirm the account is now active
+
+   ![Find Function](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-Find-Function.png?raw=true)
+   ![Search Function](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Finding-Name.png?raw=true)
+   ![Search Result](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Find.png?raw=true)
+   
+5.	Right-click the account
+6.	Select “Enable Account”
+
+   ![Enable Account](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Enable-Account.png?raw=true)
+   ![Success Message](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Enable-Success.png?raw=true)
+   
+8.	Confirm the account is now active
+
+   ~[Success Login](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-Successful-login.png?raw=true)
 
 ## Verification
 -	User successfully logs in to domain workstation 
