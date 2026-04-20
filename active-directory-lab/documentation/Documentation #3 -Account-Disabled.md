@@ -3,12 +3,13 @@
 ## Overview
 This issue occurs when a user account in Active Directory has been disabled, preventing the user from authenticating to the domain. Disabled accounts are typically used for security control, employee offboarding, or administrative actions.
 
-![Account locked](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-login-account-disabled.png?raw=true)
 
 ## Symptoms
 -	User cannot log in to workstation or domain 
 -	Error message: “Your account has been disabled. Please see your system administrator.” 
 -	Login fails even with correct credentials
+
+![Account locked](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-login-account-disabled.png?raw=true)
 
 ## Environment
 - Domain: Equinox.local
@@ -27,19 +28,26 @@ This issue occurs when a user account in Active Directory has been disabled, pre
 1.	Open Active Directory Users and Computers
    
    	![Users and Computers](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Users-and-Computers.png?raw=true)
-3.	Navigate to the affected user account by using “Find” function in GUI
+2.	Locate the user account using the **Find** function
+   - Open Find dialog
 
    ![Find Function](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-Find-Function.png?raw=true)
+
+   - Enter the user name
    ![Search Function](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Finding-Name.png?raw=true)
+
+   - Select the correct user from results
    ![Search Result](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Find.png?raw=true)
    
-5.	Right-click the account
-6.	Select “Enable Account”
+3. Right-click the user account to open the context menu
+4. Select **“Enable Account”** to re-activate the account
 
    ![Enable Account](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Enable-Account.png?raw=true)
+
+5. Confirm the success message appears
    ![Success Message](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Enable-Success.png?raw=true)
    
-8.	Confirm the account is now active
+6.	Ask the user to log in again
 
    ![Success Login](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-Successful-login.png?raw=true)
 
@@ -63,4 +71,5 @@ This issue occurs when a user account in Active Directory has been disabled, pre
 -	Regularly audit disabled accounts
 
 ## References
--
+- Active Directory Users and Computers (ADUC)
+- Windows Event Viewer
