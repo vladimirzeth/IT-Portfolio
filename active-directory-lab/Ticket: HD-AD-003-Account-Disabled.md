@@ -24,4 +24,6 @@ Resolved
 
 ## Documentation
 
-[Active Directory – Account Disabled Troubleshooting](./active-directory-lab/documentation/Documentation #3 -Account-Disabled.md)
+## Documentation
+
+- [Active Directory – Account Disabled Troubleshooting](../active-directory-lab/documentation/ad-003-account-disabled.md)
