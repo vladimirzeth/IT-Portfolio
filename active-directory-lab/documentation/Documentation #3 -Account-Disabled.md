@@ -30,11 +30,11 @@ This issue occurs when a user account in Active Directory has been disabled, pre
    	![Users and Computers](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Users-and-Computers.png?raw=true)
   	
 3.	Locate the user account using the **Find** function
-   - Open Find dialog
+ 	  - Open Find dialog
 
    ![Find Function](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-Find-Function.png?raw=true)
 
-   - Enter the user name
+  	 - Enter the user name
      
    ![Search Function](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Finding-Name.png?raw=true)
 
