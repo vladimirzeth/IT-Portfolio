@@ -27,7 +27,7 @@ This issue occurs when a user account in Active Directory has been disabled, pre
 ## Resolution
 1.	Open Active Directory Users and Computers
    
-   ![Users and Computers](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Users-and-Computers.png?raw=true)
+  	 ![Users and Computers](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-AD-Users-and-Computers.png?raw=true)
   	
 2.	Locate the user account using the **Find** function
 	- Open Find dialog
