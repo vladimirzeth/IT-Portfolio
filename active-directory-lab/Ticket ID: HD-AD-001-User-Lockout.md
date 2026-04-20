@@ -47,3 +47,9 @@ Account was locked due to multiple failed login attempts exceeding the domain lo
 
 ## Status
 Resolved
+
+---
+
+## Documentation
+
+- [Active Directory – Account Locked Out Troubleshooting](../active-directory-lab/documentation/ad-account-locked-out.md)
