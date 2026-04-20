@@ -46,6 +46,7 @@ Account lockout occurs when a user exceeds the maximum number of failed login at
 - Confirm account status shows **Locked Out**
 
   ![Verification for locked out](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-001-AD-Verification-Locked-Out.png?raw=true)
+  
   ![Locked Out](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-001-AD-Unlocking-Account.png?raw=true)
 
 ---
