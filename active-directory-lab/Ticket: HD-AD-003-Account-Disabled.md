@@ -3,6 +3,7 @@
 ## User Information
 - Name: Anastasia Struva
 - Department: IT
+- Date Reported: April 20, 2026
 
 ## Issue Summary
 User unable to log in. Account appears disabled.
