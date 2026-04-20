@@ -3,7 +3,7 @@
 ## Overview
 This issue occurs when a user account in Active Directory has been disabled, preventing the user from authenticating to the domain. Disabled accounts are typically used for security control, employee offboarding, or administrative actions.
 
-![Account locked](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-login-account-disabled.png?raw=true)
+(https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-003-login-account-disabled.png?raw=true)
 
 ## Symptoms
 -	User cannot log in to workstation or domain 
