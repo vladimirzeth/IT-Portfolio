@@ -79,15 +79,6 @@ Account lockout occurs when a user exceeds the maximum number of failed login at
 - Email/mobile sync using outdated password  
 - Background services using stored credentials  
 
----
-
-## Advanced Troubleshooting
-- Check Event Viewer:
-  - Event ID **4740** → Account locked out event  
-  - Event ID **4625** → Failed login attempts  
-- Identify source machine causing lockout  
-- Use tools like:
-  - LockoutStatus.exe (if available in lab)
 
 ---
 
