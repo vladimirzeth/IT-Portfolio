@@ -55,4 +55,4 @@ Resolved
 
 ## Documentation
 
-- [Active Directory – Recurring Account Lockout Troubleshooting](../active-directory-lab/documentation/ad-recurring-lockout.md)
+- [Active Directory – Recurring Account Lockout Troubleshooting](../active-directory-lab/documentation/ad-recurring-account-locked-out.md)
