@@ -22,7 +22,7 @@ This lab simulates a real-world scenario where a temporary staff account becomes
 - Service: Active Directory Domain Services (AD DS)  
 - Tools:
   - Active Directory Users and Computers (ADUC)
-  - Windows 11 Domain-Joined Client VM
+  - Windows 11 Domain-Joined Client
   - Server Manager (for AD verification)
 
 ---
