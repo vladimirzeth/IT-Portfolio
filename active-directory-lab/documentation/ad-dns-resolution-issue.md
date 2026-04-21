@@ -11,7 +11,7 @@ User was unable to access domain resources due to incorrect DNS configuration on
 - Domain login slow or failing  
 - Hostnames not resolving  
 
-![Failed domain access or ping error](<insert-failed-access-screenshot-link>)
+![Failed domain access or network error](<insert-failed-access-screenshot-link>)
 
 ---
 
@@ -33,59 +33,58 @@ Client was configured with external DNS instead of internal Domain Controller DN
 
 ## Investigation Steps  
 
-### 1. Check IP Configuration  
-- Ran `ipconfig /all`  
-- Verified DNS settings  
+### 1. Check Network Configuration via GUI  
+- Opened Network Connections using `ncpa.cpl`  
+- Accessed adapter properties  
+- Checked IPv4 settings  
 
-![ipconfig showing incorrect DNS (8.8.8.8 or ISP DNS)](<insert-wrong-dns-screenshot-link>)
+![Network Connections window (ncpa.cpl)](<insert-ncpa-main-window-screenshot-link>)
 
 ---
 
-### 2. Verify Name Resolution  
-- Ran `nslookup equinox.local`  
-- Confirmed resolution failure  
+### 2. Verify DNS Configuration  
+- Opened IPv4 properties  
+- Checked “Use the following DNS server addresses”  
 
-![nslookup failure output](<insert-nslookup-failure-screenshot-link>)
+![IPv4 properties showing incorrect DNS (8.8.8.8 or ISP DNS)](<insert-wrong-dns-screenshot-link>)
 
 ---
 
 ## Resolution Steps  
 
-### 1. Fix DNS Configuration  
-- Set DNS server to Domain Controller (DC01 IP)
+### 1. Correct DNS Settings  
+- Updated DNS to Domain Controller (DC01 IP) via IPv4 settings  
 
-![DNS settings corrected to Domain Controller IP](<insert-fixed-dns-screenshot-link>)
-
----
-
-### 2. Flush DNS Cache  
-- Ran `ipconfig /flushdns`  
+![Correct DNS set to Domain Controller IP](<insert-fixed-dns-screenshot-link>)
 
 ---
 
-### 3. Restart Network Adapter  
-- Disabled and re-enabled network adapter  
+### 2. Refresh Network Connection  
+- Disabled and enabled network adapter  
+- Or reconnected network interface  
+
+![Network adapter disabled/enabled status](<insert-reconnect-adapter-screenshot-link>)
 
 ---
 
 ## Verification  
 
 - Domain resources now accessible  
-- DNS resolution working  
 - Login successful  
+- Network stable  
 
-![Successful ping or domain login after fix](<insert-success-verification-screenshot-link>)
+![Successful domain login or ping after fix](<insert-success-verification-screenshot-link>)
 
 ---
 
 ## Resolution Summary  
 
-Client DNS was corrected from external DNS to internal Domain Controller DNS, restoring domain connectivity and authentication.
+The issue was caused by incorrect DNS configuration on the client machine. Updating the DNS settings via Network Adapter Properties (`ncpa.cpl`) to point to the Domain Controller restored domain connectivity.
 
 ---
 
 ## Prevention  
 
 - Always configure DNS to point to Domain Controller in AD environments  
-- Avoid using public DNS on domain-joined machines  
-- Verify DNS settings during workstation setup
+- Avoid using public DNS (e.g., 8.8.8.8) on domain-joined machines  
+- Verify network settings during workstation setup and onboarding
