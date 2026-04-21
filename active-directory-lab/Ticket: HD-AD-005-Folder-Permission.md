@@ -12,9 +12,9 @@ User cannot access shared folder on network.
 - Shared Folder: \\FS01\Sales
 
 ## Troubleshooting Steps
-- Verified NTFS permissions
-- Checked share permissions
-- Confirmed group membership
+- NTFS permissions (File Server)
+- Share permissions (File Server)
+- AD group membership (ADUC)
 
 ## Resolution
 - Added user to Sales_Team group
