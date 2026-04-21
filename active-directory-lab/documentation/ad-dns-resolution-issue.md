@@ -21,7 +21,7 @@ User was unable to access domain resources due to incorrect DNS configuration on
 - Domain Controller: DC01  
 - Client: WS01  
 
-![ipconfig showing network configuration](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-006-DNS.png?raw=true)
+![ipconfig showing network configuration](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-006-Client-DNS.png?raw=true)
 
 ---
 
@@ -38,7 +38,7 @@ Client was configured with external DNS instead of internal Domain Controller DN
 - Accessed adapter properties  
 - Checked IPv4 settings  
 
-![Network Connections window (ncpa.cpl)](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-006-Client-DNS.png?raw=true)
+![Network Connections window (ncpa.cpl)](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-0061-Client-Before-DNS.png?raw=true)
 
 ---
 
