@@ -11,7 +11,7 @@ Recurring account lockout occurs when a user account is repeatedly locked after 
 - User experiences intermittent login success  
 - Event ID 4740 appears multiple times in Event Viewer  
 
-![Lockout Error](../screenshots/recurring-lockout-error.png)
+![Lockout Error](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-002-Locked-Out.png?raw=true)
 
 ---
 
@@ -42,7 +42,7 @@ Recurring account lockout occurs when a user account is repeatedly locked after 
 - Look for:
   - Event ID **4740** (Account lockout)
 
-![Event 4740](../screenshots/event-4740.png)
+![Event 4740](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-002-Event-Viewer-Locked-Out-Result.png?raw=true)
 
 ---
 
@@ -51,7 +51,7 @@ Recurring account lockout occurs when a user account is repeatedly locked after 
 - Open Event ID 4740 details  
 - Check **Caller Computer Name**
 
-![Caller Computer](../screenshots/caller-computer.png)
+![Caller Computer](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-002-Computer-Name.png?raw=true)
 
 > Note: In this lab setup, only one client machine is used, so the same computer name appears repeatedly.  
 > In real environments, multiple devices may appear here.
@@ -63,7 +63,7 @@ Recurring account lockout occurs when a user account is repeatedly locked after 
 - Look for Event ID **4625**  
 - Confirm repeated failed authentication attempts  
 
-![Failed Login](../screenshots/event-4625.png)
+![Failed Login](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-002-Event-Viewer-Login-Attempts.png?raw=true)
 
 ---
 
@@ -75,7 +75,7 @@ Recurring account lockout occurs when a user account is repeatedly locked after 
 - Change password in ADUC  
 - Attempt login using old password multiple times  
 
-![Failed Attempts](../screenshots/failed-login.png)
+![Failed Attempts](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-002-Failed-Login.png?raw=true)
 
 ---
 
@@ -84,7 +84,7 @@ Recurring account lockout occurs when a user account is repeatedly locked after 
 - Unlock account in ADUC  
 - Log in using updated password  
 
-![Unlock Account](../screenshots/unlock-account.png)
+![Unlock Account](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-002-Logging-In.png?raw=true)
 
 ---
 
@@ -92,8 +92,6 @@ Recurring account lockout occurs when a user account is repeatedly locked after 
 
 - Monitor Event Viewer logs  
 - Confirm no new lockout events occur  
-
-![Successful Login](../screenshots/success-login.png)
 
 ---
 
