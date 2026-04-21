@@ -1,19 +1,17 @@
 # Active Directory – Recurring Account Lockout Troubleshooting
 
 ## Overview
-Recurring account lockout occurs when a user account is repeatedly locked after being unlocked. This typically indicates continuous authentication attempts using outdated or incorrect credentials.
-
-> Note: This scenario was simulated in a controlled lab environment using stale credentials on a domain-joined client machine.
+Recurring account lockout occurs when a user account is repeatedly locked after being unlocked. This typically indicates continuous authentication attempts using outdated credentials from a device or service.
 
 ---
 
 ## Symptoms
 
-- User account repeatedly locks after being unlocked  
-- User experiences intermittent login access  
-- Correct password works temporarily, then fails again  
+- Account locks again shortly after being unlocked  
+- User experiences intermittent login success  
+- Event ID 4740 appears multiple times in Event Viewer  
 
-![Account Lockout Error](../screenshots/recurring-lockout-error.png)
+![Lockout Error](../screenshots/recurring-lockout-error.png)
 
 ---
 
@@ -23,70 +21,90 @@ Recurring account lockout occurs when a user account is repeatedly locked after 
 - Service: Active Directory Domain Services (AD DS)  
 - Tools:
   - Active Directory Users and Computers (ADUC)
-  - Event Viewer
+  - Event Viewer  
 
 ---
 
 ## Root Cause
 
 - Repeated authentication attempts using outdated credentials  
-- Simulated stale credentials on client machine  
-- Continuous failed login attempts triggering lockout policy  
+- Continuous failed logon attempts triggering lockout policy  
 
 ---
 
-## Resolution Steps
+## Investigation Steps
 
-### 1. Confirm Account Lockout in ADUC
+### 1. Check Account Lockout Event
 
-- Open **Active Directory Users and Computers**  
-- Locate user: Camille Spencer  
-- Verify account is locked  
-
-![ADUC Locked Account](../screenshots/aduc-locked-account.png)
-
----
-
-### 2. Review Security Logs on Domain Controller
-
-- Open **Event Viewer**  
+- Open **Event Viewer** on Domain Controller  
 - Navigate to:  
   `Windows Logs → Security`  
-- Identify:
-  - Event ID **4740** (Account lockout)  
-  - Event ID **4625** (Failed logon attempts)  
+- Look for:
+  - Event ID **4740** (Account lockout)
 
-![Event Viewer Lockout](../screenshots/event-4740.png)
+![Event 4740](../screenshots/event-4740.png)
 
 ---
 
-### 3. Simulate Recurring Lockout (Lab Setup)
+### 2. Identify Source of Lockout
+
+- Open Event ID 4740 details  
+- Check **Caller Computer Name**
+
+![Caller Computer](../screenshots/caller-computer.png)
+
+> Note: In this lab setup, only one client machine is used, so the same computer name appears repeatedly.  
+> In real environments, multiple devices may appear here.
+
+---
+
+### 3. Analyze Failed Login Attempts
+
+- Look for Event ID **4625**  
+- Confirm repeated failed authentication attempts  
+
+![Failed Login](../screenshots/event-4625.png)
+
+---
+
+## Resolution Steps (Lab Implementation)
+
+### 1. Simulate Recurring Lockout
 
 - Log in using correct credentials  
 - Change password in ADUC  
 - Attempt login using old password multiple times  
 
-![Failed Login Attempts](../screenshots/failed-login.png)
+![Failed Attempts](../screenshots/failed-login.png)
 
 ---
 
-### 4. Clear Cached Credentials
-
-- Open **Credential Manager**  
-- Remove stored domain credentials  
-- Re-enter updated password  
-
-![Credential Manager](../screenshots/credential-manager.png)
-
----
-
-### 5. Unlock and Test Account
+### 2. Unlock and Correct Authentication
 
 - Unlock account in ADUC  
-- Log in using updated credentials  
-- Confirm stable access  
+- Log in using updated password  
+
+![Unlock Account](../screenshots/unlock-account.png)
+
+---
+
+### 3. Verify Stability
+
+- Monitor Event Viewer logs  
+- Confirm no new lockout events occur  
 
 ![Successful Login](../screenshots/success-login.png)
+
+---
+
+## Resolution (Real-World Scenario)
+
+If multiple devices are identified in **Caller Computer Name**:
+
+- Locate affected devices  
+- Remove cached credentials  
+- Update stored passwords on all devices  
+- Sign out active sessions if necessary  
 
 ---
 
@@ -94,23 +112,23 @@ Recurring account lockout occurs when a user account is repeatedly locked after 
 
 - No new Event ID 4740 entries observed  
 - User account remains unlocked  
-- Successful login persists after multiple attempts  
+- Successful login persists without interruption  
 
 ---
 
 ## Common Scenarios
 
-- User changed password but system still uses old credentials  
-- Background authentication attempts using outdated password  
-- Cached credentials not updated  
+- User changed password but another device still uses old credentials  
+- Background authentication using outdated password  
+- Multiple systems attempting login simultaneously  
 
 ---
 
 ## Prevention
 
-- Ensure all credentials are updated after password change  
-- Clear cached credentials regularly  
-- Monitor frequent lockout events in Event Viewer  
+- Ensure all devices are updated after password change  
+- Monitor lockout events regularly  
+- Educate users on credential management  
 
 ---
 
