@@ -8,8 +8,8 @@
 ---
 
 ## Issue Summary
-User account is repeatedly getting locked out shortly after being unlocked.  
-User is unable to maintain stable access to the domain despite correct password usage.
+User account repeatedly locks out shortly after being unlocked.  
+User reports intermittent access to domain resources despite using correct credentials.
 
 ---
 
@@ -17,34 +17,39 @@ User is unable to maintain stable access to the domain despite correct password 
 - Domain: Equinox.local  
 - Directory Service: Active Directory Domain Services (AD DS)  
 - Client OS: Windows 10 (Domain-joined workstation)  
-- Devices Involved:
-  - Laptop (primary workstation)
-  - Mobile device (email sync enabled)
+- Tools Used:
+  - Active Directory Users and Computers (ADUC)
+  - Event Viewer (Domain Controller)
 
 ---
 
 ## Troubleshooting Steps
-- Verified account lockout status in Active Directory Users and Computers (ADUC)  
-- Reviewed Event Viewer logs on Domain Controller  
-- Identified repeated account lockout events (Event ID 4740)  
-- Checked for multiple authentication sources using the same account  
-- Reviewed stored credentials on client machine  
+- Verified account lockout status in ADUC  
+- Reviewed Security logs on Domain Controller  
+- Identified multiple lockout events (Event ID 4740)  
+- Observed repeated failed logon attempts (Event ID 4625)  
+- Simulated stale credential usage on client machine  
 
 ---
 
 ## Resolution
-- Identified outdated cached credentials on secondary device (mobile/email client)  
-- Cleared saved credentials from Credential Manager on workstation  
-- Updated password on all connected devices  
-- Forced sign-out from all active sessions  
-- Monitored account after unlock for reoccurrence  
+- Reset user password in Active Directory  
+- Cleared cached/stored credentials on client machine  
+- Re-authenticated user with updated credentials  
+- Monitored account for further lockout events  
 
 ---
 
 ## Root Cause
-Recurring lockouts were caused by **outdated stored credentials on a secondary device**, which continuously attempted authentication using an old password, triggering the domain lockout policy.
+Recurring lockouts were caused by repeated authentication attempts using outdated credentials on the client machine, simulating a secondary device or service.
 
 ---
 
 ## Status
 Resolved
+
+---
+
+## Documentation
+
+- [Active Directory – Recurring Account Lockout Troubleshooting](../active-directory-lab/documentation/ad-recurring-lockout.md)
