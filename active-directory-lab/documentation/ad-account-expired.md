@@ -12,7 +12,9 @@ This lab simulates a real-world scenario where a temporary staff account becomes
 - User is unable to log in to domain-joined machine  
 - Authentication fails despite correct credentials  
 - No indication of incorrect password (account restriction behavior instead)  
-- Account access suddenly stops working  
+- Account access suddenly stops working
+
+    ![Account Expired](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-004-Account-Expired.png?raw=true)
 
 ---
 
@@ -42,7 +44,7 @@ This lab simulates a real-world scenario where a temporary staff account becomes
 - Locate user account: Melanie Cruz  
 - Check **Account tab → Account expires setting**
 
-![Account Properties](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-004-Account-Properties.png?raw=true)
+![Account Properties](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-004-Account-Expired-AD.png?raw=true)
 
 ---
 
@@ -74,7 +76,7 @@ This lab simulates a real-world scenario where a temporary staff account becomes
 - Modify:
   - Set expiration date to future date OR select **Never expires**
 
-![Extend Expiration](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-004-Extend-Expiration.png?raw=true)
+![Extend Expiration](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-004-Solution.png?raw=true)
 
 ---
 
@@ -90,7 +92,7 @@ This lab simulates a real-world scenario where a temporary staff account becomes
 - Return to Windows 11 client VM  
 - Attempt login again using same credentials  
 
-![Successful Login](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-004-Successful-Login.png?raw=true)
+![Successful Login](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-004-Success-Login.png?raw=true)
 
 ### Result:
 - User successfully logs in to the domain  
