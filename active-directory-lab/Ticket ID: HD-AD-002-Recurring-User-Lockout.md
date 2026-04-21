@@ -27,9 +27,9 @@ User experiences intermittent access to the domain despite using correct credent
 - Verified account lockout status in ADUC  
 - Reviewed Security logs on Domain Controller  
 - Identified multiple lockout events (Event ID 4740)  
-- Checked **Caller Computer Name** in Event Viewer logs  
+- Reviewed available event details (Target User Name, Target Domain Name, Computer)  
 - Observed repeated failed logon attempts (Event ID 4625)  
-- Simulated stale credential authentication using outdated password on client machine  
+- Simulated repeated authentication attempts using outdated credentials on client machine  
 
 ---
 
@@ -38,12 +38,13 @@ User experiences intermittent access to the domain despite using correct credent
 - Identified repeated login attempts using outdated credentials  
 - Instructed user to use updated password for authentication  
 - Unlocked account in ADUC  
-- Monitored account to confirm no further lockout events  
+- Verified stable login after correct authentication  
+- Monitored Event Viewer to confirm no further lockout events  
 
 ---
 
 ## Root Cause
-Recurring lockouts were caused by repeated authentication attempts using outdated credentials from a client machine.
+Recurring lockouts were caused by repeated authentication attempts using outdated credentials on the client machine.
 
 ---
 
