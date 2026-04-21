@@ -11,7 +11,7 @@ User was unable to access domain resources due to incorrect DNS configuration on
 - Domain login slow or failing  
 - Hostnames not resolving  
 
-![Failed domain access or network error](<insert-failed-access-screenshot-link>)
+![Failed domain access or network error](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-006-Cant-connect-to-server.png?raw=true)
 
 ---
 
@@ -21,7 +21,7 @@ User was unable to access domain resources due to incorrect DNS configuration on
 - Domain Controller: DC01  
 - Client: WS01  
 
-![ipconfig showing network configuration](<insert-ipconfig-before-fix-screenshot-link>)
+![ipconfig showing network configuration](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-006-DNS.png?raw=true)
 
 ---
 
@@ -38,15 +38,13 @@ Client was configured with external DNS instead of internal Domain Controller DN
 - Accessed adapter properties  
 - Checked IPv4 settings  
 
-![Network Connections window (ncpa.cpl)](<insert-ncpa-main-window-screenshot-link>)
+![Network Connections window (ncpa.cpl)](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-0061-Client-Before-DNS.png?raw=true)
 
 ---
 
 ### 2. Verify DNS Configuration  
 - Opened IPv4 properties  
 - Checked “Use the following DNS server addresses”  
-
-![IPv4 properties showing incorrect DNS (8.8.8.8 or ISP DNS)](<insert-wrong-dns-screenshot-link>)
 
 ---
 
@@ -55,15 +53,13 @@ Client was configured with external DNS instead of internal Domain Controller DN
 ### 1. Correct DNS Settings  
 - Updated DNS to Domain Controller (DC01 IP) via IPv4 settings  
 
-![Correct DNS set to Domain Controller IP](<insert-fixed-dns-screenshot-link>)
+![Correct DNS set to Domain Controller IP](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-0061-Client-DNS.png?raw=true)
 
 ---
 
 ### 2. Refresh Network Connection  
 - Disabled and enabled network adapter  
 - Or reconnected network interface  
-
-![Network adapter disabled/enabled status](<insert-reconnect-adapter-screenshot-link>)
 
 ---
 
@@ -73,7 +69,10 @@ Client was configured with external DNS instead of internal Domain Controller DN
 - Login successful  
 - Network stable  
 
-![Successful domain login or ping after fix](<insert-success-verification-screenshot-link>)
+![Successful domain login or ping after fix](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-006-Welcome-Message.png?raw=true)
+
+![Server Login Page](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-006-Can-Login-to-Server.png?raw=true)
+
 
 ---
 
