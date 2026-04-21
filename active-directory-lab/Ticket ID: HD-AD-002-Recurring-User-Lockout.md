@@ -9,7 +9,7 @@
 
 ## Issue Summary
 User account repeatedly locks out shortly after being unlocked.  
-User reports intermittent access to domain resources despite using correct credentials.
+User experiences intermittent access to the domain despite using correct credentials.
 
 ---
 
@@ -27,21 +27,23 @@ User reports intermittent access to domain resources despite using correct crede
 - Verified account lockout status in ADUC  
 - Reviewed Security logs on Domain Controller  
 - Identified multiple lockout events (Event ID 4740)  
+- Checked **Caller Computer Name** in Event Viewer logs  
 - Observed repeated failed logon attempts (Event ID 4625)  
-- Simulated stale credential usage on client machine  
+- Simulated stale credential authentication using outdated password on client machine  
 
 ---
 
 ## Resolution
 - Reset user password in Active Directory  
-- Cleared cached/stored credentials on client machine  
-- Re-authenticated user with updated credentials  
-- Monitored account for further lockout events  
+- Identified repeated login attempts using outdated credentials  
+- Instructed user to use updated password for authentication  
+- Unlocked account in ADUC  
+- Monitored account to confirm no further lockout events  
 
 ---
 
 ## Root Cause
-Recurring lockouts were caused by repeated authentication attempts using outdated credentials on the client machine, simulating a secondary device or service.
+Recurring lockouts were caused by repeated authentication attempts using outdated credentials from a client machine.
 
 ---
 
