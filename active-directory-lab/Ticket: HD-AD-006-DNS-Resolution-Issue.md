@@ -40,3 +40,8 @@ Client machine was using external DNS instead of internal Domain Controller DNS.
 
 ## Status
 Resolved
+
+---
+
+## Documentation
+- [Active Directory – DNS Resolution Troubleshooting](../active-directory-lab/documentation/ad-dns-resolution-issue.md)
