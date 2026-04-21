@@ -17,7 +17,7 @@ User cannot access shared folder on network.
 - Confirmed group membership
 
 ## Resolution
-- Added user to Finance security group
+- Added user to Sales_Team group
 - Verified access
 
 ## Root Cause
