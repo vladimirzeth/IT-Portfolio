@@ -25,3 +25,8 @@ User not assigned correct permissions.
 
 ## Status
 Resolved
+
+---
+
+## Documentation
+- [Active Directory – Folder Permission Troubleshooting](../active-directory-lab/documentation/ad-folder-permission.md)
