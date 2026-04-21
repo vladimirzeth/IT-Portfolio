@@ -57,7 +57,12 @@ Client was configured with external DNS instead of internal Domain Controller DN
 
 ---
 
-### 2. Refresh Network Connection  
+### 2. Flush DNS Cache
+- Ran `ipconfig /flushdns` to clear outdated DNS records
+
+---
+
+### 3. Refresh Network Connection  
 - Disabled and enabled network adapter  
 - Or reconnected network interface  
 
