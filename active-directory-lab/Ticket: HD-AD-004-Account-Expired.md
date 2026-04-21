@@ -52,4 +52,4 @@ Resolved
 ---
 
 ## Documentation (Link)
-https://github.com/vladimirzeth/IT-Portfolio/tree/main/active-directory-lab/HD-AD-004
+- [Active Directory – Account Expired Troubleshooting](../active-directory-lab/documentation/ad-account-expired.md)
