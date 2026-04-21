@@ -44,7 +44,11 @@ Client was configured with external DNS instead of internal Domain Controller DN
 
 ### 2. Verify DNS Configuration  
 - Opened IPv4 properties  
-- Checked “Use the following DNS server addresses”  
+- Checked “Use the following DNS server addresses”
+
+
+### 3. DNS Validation
+- Ran nslookup to confirm domain resolution
 
 ---
 
