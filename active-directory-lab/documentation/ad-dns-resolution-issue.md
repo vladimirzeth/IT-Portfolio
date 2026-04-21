@@ -44,11 +44,13 @@ Client was configured with external DNS instead of internal Domain Controller DN
 
 ### 2. Verify DNS Configuration  
 - Opened IPv4 properties  
-- Checked “Use the following DNS server addresses”
+- Verified that DNS was incorrectly set to external DNS instead of DC (DC01)
 
+---
 
-### 3. DNS Validation
-- Ran nslookup to confirm domain resolution
+### 3. DNS Validation  
+- Ran `nslookup equinox.local`  
+- Confirmed DNS resolution failure before fix
 
 ---
 
