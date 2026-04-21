@@ -11,15 +11,7 @@ User was unable to access domain resources due to incorrect DNS configuration on
 - Domain login slow or failing  
 - Hostnames not resolving  
 
-📸 **Screenshot 1: Error or failure evidence**
-> Capture:  
-- Failed domain login OR  
-- “Server not found / cannot reach domain” message  
-- OR ping failure to domain (if applicable)
-
-Example commands to show:
-- `ping dc01`
-- `ping equinox.local`
+![Failed domain access or ping error](<insert-failed-access-screenshot-link>)
 
 ---
 
@@ -29,14 +21,7 @@ Example commands to show:
 - Domain Controller: DC01  
 - Client: WS01  
 
-📸 **Screenshot 2: Network configuration baseline**
-> Capture:
-- `ipconfig /all` output showing:
-  - DNS server (IMPORTANT)
-  - IP address
-  - Gateway
-
-👉 This proves wrong DNS configuration
+![ipconfig showing network configuration](<insert-ipconfig-before-fix-screenshot-link>)
 
 ---
 
@@ -49,28 +34,18 @@ Client was configured with external DNS instead of internal Domain Controller DN
 ## Investigation Steps  
 
 ### 1. Check IP Configuration  
-
 - Ran `ipconfig /all`  
 - Verified DNS settings  
 
-📸 **Screenshot 3: Evidence of wrong DNS**
-> Capture clearly:
-- DNS servers showing:
-  - ❌ 8.8.8.8 / external DNS  
-  - ❌ ISP DNS  
-- This is your “AHA MOMENT” screenshot
+![ipconfig showing incorrect DNS (8.8.8.8 or ISP DNS)](<insert-wrong-dns-screenshot-link>)
 
 ---
 
 ### 2. Verify Name Resolution  
-
 - Ran `nslookup equinox.local`  
 - Confirmed resolution failure  
 
-📸 **Screenshot 4: DNS failure proof**
-> Capture:
-- nslookup output failing OR
-- “Non-existent domain” / timeout result
+![nslookup failure output](<insert-nslookup-failure-screenshot-link>)
 
 ---
 
@@ -79,28 +54,17 @@ Client was configured with external DNS instead of internal Domain Controller DN
 ### 1. Fix DNS Configuration  
 - Set DNS server to Domain Controller (DC01 IP)
 
-📸 **Screenshot 5: Fix applied**
-> Capture:
-- Network adapter IPv4 settings showing:
-  - Preferred DNS = DC01 IP
+![DNS settings corrected to Domain Controller IP](<insert-fixed-dns-screenshot-link>)
 
 ---
 
 ### 2. Flush DNS Cache  
-- Ran: `ipconfig /flushdns`  
-
-📸 (Optional Screenshot 6)
-> Capture command execution (proof of remediation step)
+- Ran `ipconfig /flushdns`  
 
 ---
 
 ### 3. Restart Network Adapter  
-- Disabled and enabled adapter OR restarted system  
-
-📸 (Optional Screenshot 7)
-> Capture:
-- Network reconnect OR
-- Successful reconnect status
+- Disabled and re-enabled network adapter  
 
 ---
 
@@ -110,13 +74,7 @@ Client was configured with external DNS instead of internal Domain Controller DN
 - DNS resolution working  
 - Login successful  
 
-📸 **Screenshot 8: Final proof (VERY IMPORTANT)**
-> Capture ONE of the following:
-- Successful `ping dc01`
-- Successful domain login
-- Successful `nslookup equinox.local`
-
-👉 This is your “issue fully resolved” proof
+![Successful ping or domain login after fix](<insert-success-verification-screenshot-link>)
 
 ---
 
@@ -128,6 +86,6 @@ Client DNS was corrected from external DNS to internal Domain Controller DNS, re
 
 ## Prevention  
 
-- Always set DNS to Domain Controller in AD environments  
-- Avoid using public DNS in domain-joined machines  
-- Validate DNS settings during onboarding  
+- Always configure DNS to point to Domain Controller in AD environments  
+- Avoid using public DNS on domain-joined machines  
+- Verify DNS settings during workstation setup
