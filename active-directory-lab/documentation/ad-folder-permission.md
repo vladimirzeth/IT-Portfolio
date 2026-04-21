@@ -1,7 +1,7 @@
 # Active Directory – Shared Folder Access Issue
 
 ## Overview  
-User was unable to access a shared network folder located at `\\FS01\Sales`. The issue was caused by incorrect security group assignment resulting in insufficient permissions to the shared resource.
+User was unable to access a shared network folder located at `\\FS01\Sales`. The issue was caused by missing group membership required for access permissions.
 
 ---
 
@@ -9,9 +9,9 @@ User was unable to access a shared network folder located at `\\FS01\Sales`. The
 
 - User cannot access `\\FS01\Sales` shared folder  
 - Access denied error when attempting to open network path  
-- No visible network connectivity issues  
+- No network connectivity issues observed  
 
-![Access Denied](INSERT_IMAGE_LINK_HERE)
+![Access Denied](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-005-File-Access-Denied.png?raw=true)
 
 ---
 
@@ -21,57 +21,80 @@ User was unable to access a shared network folder located at `\\FS01\Sales`. The
 - Shared Folder: \\FS01\Sales  
 - Service: Windows File Sharing (SMB)  
 - Tools:
-  - Active Directory Users and Computers (ADUC)
-  - File Server Permission Management
-  - NTFS Permissions
+  - Active Directory Users and Computers (ADUC)  
+  - File Server Permission Management  
+  - NTFS Permissions  
 
 ---
 
 ## Root Cause  
 
-User was not assigned to the correct security group required to access the shared folder. This resulted in missing NTFS and share-level permissions.
+User was not included in the required security group that has permission to access the shared folder.
 
 ---
 
 ## Investigation Steps  
 
-### 1. Verified Share Access  
-- Attempted to access `\\FS01\Sales`  
-- Confirmed access denied error  
+### 1. Verified Access Denial  
+- User attempted to access `\\FS01\Sales`  
+- Confirmed access was denied  
 
 ---
 
-### 2. Checked Share Permissions  
-- Reviewed file server share permissions  
-- Confirmed required groups exist but user was not included  
+### 2. Checked Shared Folder Properties in Active Directory / File Server  
+- Reviewed shared folder permission settings  
+- Identified permitted security groups for access
+
+  ![Permitted Lists](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-005-Permitted-Lists.png?raw=true)
 
 ---
 
-### 3. Checked NTFS Permissions  
-- Reviewed folder security settings  
-- Verified access restricted to specific security groups  
+### 3. Verified User Group Membership  
+- Checked if user is part of authorized access groups  
+- Confirmed user is not included in required group
+
+  ![User Member of](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-005-Acct-Member-Of.png?raw=true)
+  
+---
+
+## Resolution Steps  
+
+### 1. Confirm Access Rejection  
+- Verified that the user was denied access to the shared folder
 
 ---
 
-### 4. Verified Active Directory Group Membership  
-- Opened Active Directory Users and Computers (ADUC)  
-- Checked user account properties  
-- Confirmed missing required security group  
+### 2. Review Shared Permissions  
+- Checked shared folder properties and security settings  
+- Identified allowed groups for access control  
 
 ---
 
-## Resolution  
+### 3. Validate Group Membership  
+- Confirmed that the user is not part of the permitted group list  
 
-- Added user to the correct security group (Finance group)  
-- Applied Active Directory changes  
-- Forced policy refresh / user re-login  
-- Verified successful access to shared folder  
+---
+
+### 4. Add User to Correct Security Group  
+- IT added the user to the **Sales_Team** security group
+
+  ![Adding To Group](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-005-Adding-Group.png?raw=true)
+
+  ![Added](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-005-Added.png?raw=true)
+
+---
+
+### 5. Verify Access After Changes  
+- User re-logged in / refreshed session  
+- Confirmed successful access to `\\FS01\Sales`
+
+  ![User Access the Folder Successfully](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-005-Success-Passthrough.png?raw=true)
 
 ---
 
 ## Resolution Outcome  
 
-User successfully gained access to `\\FS01\Sales` after proper security group assignment.
+User gained successful access to the shared folder after being added to the correct security group.
 
 ---
 
@@ -79,21 +102,13 @@ User successfully gained access to `\\FS01\Sales` after proper security group as
 
 - User can now access shared folder  
 - No access denied errors observed  
-- Permissions applied correctly and persist after re-login  
+- Permissions applied successfully after group update  
 
 ---
 
 ## Prevention  
 
-- Ensure correct group assignment during onboarding  
-- Regular audit of security group memberships  
-- Maintain Role-Based Access Control (RBAC) structure  
-- Monitor permission-related access issues proactively  
-
----
-
-## Documentation  
-
-- Ticket ID: HD-AD-005  
-- Evidence Folder: `\\S01\IT-Documentation\HD-AD-005\`  
-- Screenshots: Add your GitHub image links here  
+- Ensure proper group assignment during onboarding  
+- Regular review of security group memberships  
+- Implement Role-Based Access Control (RBAC) best practices  
+- Monitor access-related issues proactively  
