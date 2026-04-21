@@ -41,7 +41,7 @@ User was not included in the required security group that has permission to acce
 
 ---
 
-### 2. Checked Shared Folder Properties in Active Directory / File Server  
+### 2. Checked shared folder permissions on the file server 
 - Reviewed shared folder permission settings  
 - Identified permitted security groups for access
 
