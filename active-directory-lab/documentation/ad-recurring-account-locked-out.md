@@ -46,15 +46,20 @@ Recurring account lockout occurs when a user account is repeatedly locked after 
 
 ---
 
-### 2. Identify Source of Lockout
+### 2. Analyze Lockout Details
 
 - Open Event ID 4740 details  
-- Check **Caller Computer Name**
+- Review available event fields such as:
+  - Target User Name  
+  - Target Domain Name  
+  - Computer (Domain Controller)
 
 ![Caller Computer](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-002-Computer-Name.png?raw=true)
 
-> Note: In this lab setup, only one client machine is used, so the same computer name appears repeatedly.  
-> In real environments, multiple devices may appear here.
+> Note: In this lab environment, the **Caller Computer Name field is not present**.  
+> The source of the lockout was determined through controlled testing using a single domain-joined client machine.  
+>  
+> In real-world environments, the **Caller Computer Name** field is used to identify the exact device causing the lockout, which may include multiple systems.
 
 ---
 
@@ -83,6 +88,7 @@ Recurring account lockout occurs when a user account is repeatedly locked after 
 
 - Unlock account in ADUC  
 - Log in using updated password  
+- Ensure correct credentials are used consistently  
 
 ![Unlock Account](https://github.com/vladimirzeth/IT-Portfolio/blob/main/active-directory-lab/screenshots/HD-AD-002-Logging-In.png?raw=true)
 
@@ -92,16 +98,17 @@ Recurring account lockout occurs when a user account is repeatedly locked after 
 
 - Monitor Event Viewer logs  
 - Confirm no new lockout events occur  
+- Validate successful authentication without interruption  
 
 ---
 
 ## Resolution (Real-World Scenario)
 
-If multiple devices are identified in **Caller Computer Name**:
+If multiple devices are identified as sources of authentication attempts:
 
-- Locate affected devices  
-- Remove cached credentials  
-- Update stored passwords on all devices  
+- Identify affected systems  
+- Remove cached or stored credentials  
+- Update passwords on all devices  
 - Sign out active sessions if necessary  
 
 ---
@@ -116,17 +123,17 @@ If multiple devices are identified in **Caller Computer Name**:
 
 ## Common Scenarios
 
-- User changed password but another device still uses old credentials  
+- User changed password but system still uses old credentials  
 - Background authentication using outdated password  
-- Multiple systems attempting login simultaneously  
+- Repeated login attempts with incorrect credentials  
 
 ---
 
 ## Prevention
 
-- Ensure all devices are updated after password change  
+- Ensure credentials are updated after password changes  
 - Monitor lockout events regularly  
-- Educate users on credential management  
+- Educate users on proper credential usage  
 
 ---
 
