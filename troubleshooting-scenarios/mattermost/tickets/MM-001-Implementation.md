@@ -157,7 +157,6 @@ The web interface enables users to select a time range and synchronize tasks.
 
 **Mobile (Limitation):**
 
-<img src="https://github.com/vladimirzeth/IT-Portfolio/blob/main/troubleshooting-scenarios/mattermost/tickets/screenshots/mmobile-webUI-sync.png?raw=true" width="250"/>
 
 **Web Interface (Solution):**
 
